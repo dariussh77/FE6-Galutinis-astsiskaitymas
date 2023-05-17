@@ -4,3 +4,5 @@
 4. Atsidarykite naują komandinės eilutės terminalą ir paleiskite 'npm start' komandą.
 
 Geros Dienos
+
+Projektas parengtas - https://thephilosophyforum.com/ pavyzdžiu.
