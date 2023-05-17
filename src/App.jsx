@@ -7,9 +7,9 @@ const App=()=>{
     <>
       <Header/>
       <Routes>
-        <Route path='/' element={<h1>Pagrindinis page</h1>}/>
-        <Route path='/forums' element={<h1>Forums page</h1>}/>
-        <Route path='/members' element={<h1>Mūsų bendruomenė</h1>}/>
+        <Route path='/straipsniai' element={<h1>Pagrindinis page</h1>}/>
+        <Route path='/forumas' element={<h1>Forums page</h1>}/>
+        <Route path='/bendruomene' element={<h1>Mūsų bendruomenė</h1>}/>
       </Routes>
     </>
   );
