@@ -28,6 +28,8 @@ const Straipsniai = () => {
                 <button onClick={()=>fAnkstenis()}>Ankstesnis</button>
                 <button onClick={()=>fSekantis()}>Sekantis</button>
             </div>
+
+            Neina paleidus iskart http://localhost:3000/straipsniai????????????????
             
         </MainStrCSS>
      );
