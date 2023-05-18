@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 const HeaderCSS=styled.header`
     position: sticky;
     top:0;
-    box-shadow: 10px 10px 10px grey;
+    box-shadow: 0px 10px 7px grey;
     display: flex;
     justify-content: space-between;
     background-image: url('https://www.akmenstata.lt/wp-content/uploads/2021/09/MARMURAS-CALACATTA-EXTRA-BORGHINI.jpg');
