@@ -6,16 +6,19 @@ import { BrowserRouter } from 'react-router-dom';
 import { StraipsniaiProvider } from './contexts/StraipsniaiContext';
 import { TemosProvider } from './contexts/TemosContext';
 import { QuestionsProvider } from './contexts/QuestionsContext';
+import { UsersProvider } from './contexts/UsersContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <QuestionsProvider>
-        <TemosProvider>
-            <StraipsniaiProvider>
-                <BrowserRouter>
-                    <App />
-                </BrowserRouter>
-            </StraipsniaiProvider>
-        </TemosProvider>
-    </QuestionsProvider>
+    <UsersProvider>
+        <QuestionsProvider>
+            <TemosProvider>
+                <StraipsniaiProvider>
+                    <BrowserRouter>
+                        <App />
+                    </BrowserRouter>
+                </StraipsniaiProvider>
+            </TemosProvider>
+        </QuestionsProvider>
+    </UsersProvider>
 );

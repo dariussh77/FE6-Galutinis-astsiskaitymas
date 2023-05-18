@@ -2,7 +2,7 @@
     "temos":[
         {
             "id":1,
-            "tema":"metafika"
+            "tema":"metafizika"
         },
         {
             "id":2,
@@ -53,7 +53,7 @@
         {
             "id":1,
             "creator":1,
-            "tema":"metafika",
+            "tema":"metafizika",
             "question":"Kaip realiatyvo teorija atsiliepia filosofioje?",
             "likes":10,
             "dislikes":5,
@@ -71,7 +71,7 @@
         {
             "id":3,
             "creator":2,
-            "tema":"metafika",
+            "tema":"metafizika",
             "question":"Kodėl verta mąstyti?",
             "likes":10,
             "dislikes":5,
@@ -127,7 +127,8 @@
             "password":"adminas",
             "admin":true,
             "email":"admin@admin.lt",
-            "avatar":"https://picsum.photos/id/548/100/100"
+            "avatar":"https://picsum.photos/id/548/100/100",
+            "locked":false
         },
         {
             "id":2,
@@ -135,7 +136,8 @@
             "password":"darius",
             "admin":false,
             "email":"darius@admin.lt",
-            "avatar":"https://picsum.photos/id/823/100/100"
+            "avatar":"https://picsum.photos/id/823/100/100",
+            "locked":false
         },
         {
             "id":3,
@@ -143,7 +145,8 @@
             "password":"daiva",
             "admin":true,
             "email":"daiva@admin.lt",
-            "avatar":"https://picsum.photos/id/602/100/100"
+            "avatar":"https://picsum.photos/id/602/100/100",
+            "locked":false
         }
     ]
 }
