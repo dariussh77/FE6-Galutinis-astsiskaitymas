@@ -7,7 +7,6 @@ import styled from 'styled-components';
 import Footer from './components/P3_Orgamisms/Footer';
 const MainBlockCSS=styled.div`
   display: flex;
-
 `;
 
 const App=()=>{

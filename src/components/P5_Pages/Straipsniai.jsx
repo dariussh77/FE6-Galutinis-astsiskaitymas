@@ -2,6 +2,7 @@ import { useContext } from "react";
 import StraipsniaiContext from "../../contexts/StraipsniaiContext";
 import styled from 'styled-components';
 const MainStrCSS=styled.main`
+    margin-top: 50px;
     img{
         height: 200px;
     };
