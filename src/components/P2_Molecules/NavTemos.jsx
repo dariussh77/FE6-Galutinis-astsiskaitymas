@@ -4,7 +4,7 @@ import TemosContext from "../../contexts/TemosContext";
 
 const NavTemos = () => {
     const {temos}=useContext(TemosContext);
-    console.log('temos: ', temos);
+    //console.log('temos: ', temos);
     return ( 
         <div>
             <ul>
@@ -14,7 +14,6 @@ const NavTemos = () => {
                                         tema={tema.tema}
                                         />)
                 }
-                <NavTema/>
             </ul>
         </div>
      );
