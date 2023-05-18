@@ -5,6 +5,7 @@ import Straipsniai from './components/P5_Pages/Straipsniai';
 import Nav from './components/P3_Orgamisms/Nav';
 import styled from 'styled-components';
 import Footer from './components/P3_Orgamisms/Footer';
+import ForumCards from './components/P5_Pages/ForumCards';
 const MainBlockCSS=styled.div`
   display: flex;
 `;
@@ -17,7 +18,7 @@ const App=()=>{
         <Nav/>
         <Routes>
           <Route path='/straipsniai' element={<Straipsniai/>}/>
-          <Route path='/forumas' element={<h1>Forums page</h1>}/>
+          <Route path='/forumas' element={<ForumCards/>}/>
           <Route path='/bendruomene' element={<h1>Mūsų bendruomenė</h1>}/>
         </Routes>
       </MainBlockCSS>

@@ -5,14 +5,17 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { StraipsniaiProvider } from './contexts/StraipsniaiContext';
 import { TemosProvider } from './contexts/TemosContext';
+import { QuestionsProvider } from './contexts/QuestionsContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <TemosProvider>
-        <StraipsniaiProvider>
-            <BrowserRouter>
-                <App />
-            </BrowserRouter>
-        </StraipsniaiProvider>
-    </TemosProvider>
+    <QuestionsProvider>
+        <TemosProvider>
+            <StraipsniaiProvider>
+                <BrowserRouter>
+                    <App />
+                </BrowserRouter>
+            </StraipsniaiProvider>
+        </TemosProvider>
+    </QuestionsProvider>
 );
