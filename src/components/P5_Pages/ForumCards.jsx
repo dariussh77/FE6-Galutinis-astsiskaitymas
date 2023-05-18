@@ -4,7 +4,7 @@ import QuestionCard from "../P2_Molecules/QuestionCard";
 
 const ForumCards = () => {
     const {questions}=useContext(QuestionsContext);
-    console.log('questions: ', questions);
+    //console.log('questions: ', questions);
     return ( 
         <main>
             {
