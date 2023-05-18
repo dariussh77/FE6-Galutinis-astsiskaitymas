@@ -1,8 +1,7 @@
-const NavTema = () => {
+
+const NavTema = ({tema}) => {
     return ( 
-        <li>
-            TemaX
-        </li>
+        <li>{tema}</li>
      );
 }
  
