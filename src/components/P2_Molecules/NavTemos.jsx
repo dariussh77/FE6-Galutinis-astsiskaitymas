@@ -1,9 +1,14 @@
+import NavTema from "../P1_Atoms/NavTema";
+import { useContext } from "react";
+import TemosContext from "../../contexts/TemosContext";
+
 const NavTemos = () => {
+    const {temos}=useContext(TemosContext);
     return ( 
         <div>
             <ul>
-                <li>Tema1</li>
-                <li>Tema2</li>
+                
+                <NavTema/>
             </ul>
         </div>
      );
