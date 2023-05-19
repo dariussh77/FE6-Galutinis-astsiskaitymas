@@ -11,6 +11,7 @@ const ForumCards = () => {
                 questions.map(question=><QuestionCard
                     key={question.id}
                     question={question}
+
                 />)
             }
         </main>

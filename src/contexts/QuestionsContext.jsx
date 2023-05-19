@@ -1,4 +1,4 @@
-import { createContext, useEffect, useReducer } from "react";
+import { createContext, useEffect, useReducer, useState } from "react";
 
 const QuestionsContext=createContext();
 const QuestionsAction={
@@ -26,7 +26,7 @@ const QuestionsProvider = ({children}) => {
             value={{
                 questions,
                 setQuestions,
-                QuestionsAction
+                QuestionsAction,
             }}
         >
             {children}
