@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import Footer from './components/P3_Orgamisms/Footer';
 import ForumCards from './components/P5_Pages/ForumCards';
 import ForumComments from './components/P5_Pages/ForumComments';
+import Bendruomene from './components/P5_Pages/Bendruomene';
 const MainBlockCSS=styled.div`
   display: flex;
 `;
@@ -22,7 +23,7 @@ const App=()=>{
           <Route path='/straipsniai' element={<Straipsniai/>}/>
           <Route path='/forumas' element={<ForumCards/>}/>
           <Route path='/forumas/:id' element={<ForumComments/>}/>
-          <Route path='/bendruomene' element={<h1>Mūsų bendruomenė</h1>}/>
+          <Route path='/bendruomene' element={<Bendruomene/>}/>
         </Routes>
       </MainBlockCSS>
       <Footer/>
