@@ -17,7 +17,7 @@ const MainCommentsCSS=styled.main`
 const ForumComments = () => {
     const{questions}=useContext(QuestionsContext);
     const{users}=useContext(UsersContext);
-    console.log('questions: ', questions);
+    //console.log('questions: ', questions);
     const {id}=useParams();
     const [currentQ, setcurrentQ]=useState();
     useEffect(()=>{
@@ -29,7 +29,7 @@ const ForumComments = () => {
         <MainCommentsCSS>
             <div className="questionDiv">
                 { 
-                    currentQ&&
+                    currentQ&&users.find(e=>e.id===currentQ.creator)&&
                     <>
                         <h1>KLAUSIMAS:</h1>
                         <h2>{currentQ.question}</h2> 
@@ -41,10 +41,7 @@ const ForumComments = () => {
                         </div>
                     </>
                 }        
-            </div>
-            
-
-                
+            </div>    
         </MainCommentsCSS>
      );
 }

@@ -18,6 +18,7 @@ const App=()=>{
       <MainBlockCSS>
         <Nav/>
         <Routes>
+          <Route path='/' element={<Straipsniai/>}/>
           <Route path='/straipsniai' element={<Straipsniai/>}/>
           <Route path='/forumas' element={<ForumCards/>}/>
           <Route path='/forumas/:id' element={<ForumComments/>}/>
