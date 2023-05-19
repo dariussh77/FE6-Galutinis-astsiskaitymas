@@ -4,8 +4,15 @@ import UsersContext from "../../contexts/UsersContext";
 import { useParams } from "react-router-dom";
 import styled from 'styled-components';
 const MainCommentsCSS=styled.main`
-    border: 1px solid black;
-    width: 100%;
+     width: 100%;
+    .questionDiv{
+        margin: 20px;
+        border: 1px solid black;
+    }
+    .commentsDiv{
+        margin: 20px;
+        border: 1px solid black;
+    }
 `;
 const ForumComments = () => {
     const{questions}=useContext(QuestionsContext);
@@ -29,12 +36,13 @@ const ForumComments = () => {
                         <img src={users.find(e=>e.id===currentQ.creator).avatar} alt={users.find(e=>e.id===currentQ.creator).userName} />
                         <h4>{users.find(e=>e.id===currentQ.creator).userName}</h4>
                         <h5>{currentQ.tema}</h5>
+                        <div className="commentsDiv">
+                            Komentaras1
+                        </div>
                     </>
                 }        
             </div>
-            <div className="commentsDiv">
-                
-            </div>
+            
 
                 
         </MainCommentsCSS>
