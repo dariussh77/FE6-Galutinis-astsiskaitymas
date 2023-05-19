@@ -1,4 +1,4 @@
-import { createContext, useEffect, useReducer } from "react";
+import { createContext, useEffect, useReducer, useState } from "react";
 
 const UsersContext=createContext();
 const UsersAction={
@@ -13,6 +13,7 @@ const reducer=(state,action)=>{
 }
 const UsersProvider = ({children}) => {
     const [users, setUsers]=useReducer(reducer,[]);
+    const [currentUser,setCurrentUser]=useState({id:0,admin:false});
     useEffect(()=>{
         fetch(`http://localhost:7777/users`)
             .then(res=>res.json())
@@ -26,7 +27,9 @@ const UsersProvider = ({children}) => {
             value={{
                 users, 
                 setUsers,
-                UsersAction
+                UsersAction,
+                currentUser,
+                setCurrentUser
             }}
         >
             {children}
