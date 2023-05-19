@@ -1,8 +1,9 @@
 import { useEffect, useState,useContext } from "react";
-import QuestionsContext from "../../contexts/QuestionsContext";
 import UsersContext from "../../contexts/UsersContext";
 import { useParams } from "react-router-dom";
 import styled from 'styled-components';
+import AnswersContext from "../../contexts/AnswersContext";
+import AnswerCard from "../P2_Molecules/AnswerCard";
 const MainCommentsCSS=styled.main`
      width: 100%;
     .questionDiv{
@@ -15,7 +16,8 @@ const MainCommentsCSS=styled.main`
     }
 `;
 const ForumComments = () => {
-    const{questions}=useContext(QuestionsContext);
+    const{answers}=useContext(AnswersContext);
+    //console.log('answers: ', answers);
     const{users}=useContext(UsersContext);
     //console.log('questions: ', questions);
     const {id}=useParams();
@@ -37,7 +39,15 @@ const ForumComments = () => {
                         <h4>{users.find(e=>e.id===currentQ.creator).userName}</h4>
                         <h5>{currentQ.tema}</h5>
                         <div className="commentsDiv">
-                            Komentaras1
+                            {
+                                answers&&
+                                    <>
+                                        {answers.filter(e=>e.statementId===currentQ.id).map(answer=><AnswerCard
+                                            key={answer.id}
+                                            answer={answer}
+                                        />)}
+                                    </>
+                            }
                         </div>
                     </>
                 }        
