@@ -23,7 +23,9 @@ const AnswersProvider = ({children}) => {
     return ( 
         <AnswersContext.Provider
             value={{
-
+                answers,
+                setAnswers,
+                AnswerAction
             }}
         >
             {children}
