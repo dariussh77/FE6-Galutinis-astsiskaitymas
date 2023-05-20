@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { useContext } from 'react';
+import UsersContext from '../../contexts/UsersContext';
 const HeaderCSS=styled.header`
     position: sticky;
     top:0;
@@ -35,6 +37,23 @@ const HeaderCSS=styled.header`
     }
 `;
 const Header = () => {
+    const{loggedIn, setLoggedIn, setShowLogin,setCurrentUser}=useContext(UsersContext);
+    const fClickLogin=()=>{
+        setShowLogin(true);
+    };
+    const fClickLogout=()=>{
+        setLoggedIn(false);
+        setShowLogin(false);
+        setCurrentUser({
+                id:0,
+                userName:"Svečias",
+                password:"",
+                admin:false,
+                email:"",
+                avatar:"https://missionvet.ca/wp-content/uploads/2020/01/User-Profile-PNG-1-812x812.png",
+                locked:false
+        });
+    };
     return ( 
         <HeaderCSS>
             <img src="https://www.vle.lt/tmp/vle-images/88320_1.jpg" alt="Sokratas" />
@@ -47,7 +66,12 @@ const Header = () => {
             </div>
             <div className="login">
                 <ul>
-                    <li><NavLink to='/login'>Prisijungti</NavLink></li>
+                    {
+                        loggedIn
+                        ?<li><NavLink onClick={()=>fClickLogout()}>Atsijungti</NavLink></li>
+                        :<li><NavLink onClick={()=>fClickLogin()}>Prisijungti</NavLink></li>
+                    }
+                   
                     <li><NavLink to='/register'>Registracija</NavLink></li>
                 </ul>
             </div>
