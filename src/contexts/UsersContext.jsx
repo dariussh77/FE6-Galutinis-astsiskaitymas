@@ -13,7 +13,17 @@ const reducer=(state,action)=>{
 }
 const UsersProvider = ({children}) => {
     const [users, setUsers]=useReducer(reducer,[]);
-    const [currentUser,setCurrentUser]=useState({id:0,admin:false});
+    const [currentUser,setCurrentUser]=useState({
+        id:0,
+        userName:"Svečias",
+        password:"",
+        admin:false,
+        email:"",
+        avatar:"https://missionvet.ca/wp-content/uploads/2020/01/User-Profile-PNG-1-812x812.png",
+        locked:false
+    });
+    const [loggedIn,setLoggedIn]=useState(false);
+    const [showLogin,setShowLogin]=useState(false);
     useEffect(()=>{
         fetch(`http://localhost:7777/users`)
             .then(res=>res.json())
@@ -29,7 +39,11 @@ const UsersProvider = ({children}) => {
                 setUsers,
                 UsersAction,
                 currentUser,
-                setCurrentUser
+                setCurrentUser,
+                loggedIn,
+                setLoggedIn,
+                showLogin,
+                setShowLogin
             }}
         >
             {children}
