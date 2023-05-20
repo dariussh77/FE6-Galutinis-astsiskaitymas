@@ -1,6 +1,7 @@
 import Navmenu from "../P2_Molecules/NavMenu";
 import NavTemos from "../P2_Molecules/NavTemos";
 import styled from 'styled-components';
+import NavLogin from "../P2_Molecules/NavLogin";
 const NavCSS=styled.nav`
     position: fixed;
     height: 700px;
@@ -14,6 +15,8 @@ const NavCSS=styled.nav`
 const Nav = () => {
     return ( 
         <NavCSS>
+            <NavLogin/>
+            <hr />
             <Navmenu/>
             <hr />
             <NavTemos/>

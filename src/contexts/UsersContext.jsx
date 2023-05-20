@@ -14,6 +14,7 @@ const reducer=(state,action)=>{
 const UsersProvider = ({children}) => {
     const [users, setUsers]=useReducer(reducer,[]);
     const [currentUser,setCurrentUser]=useState({id:0,admin:false});
+    const [loggedIn,setLoggedIn]=useState(false);
     useEffect(()=>{
         fetch(`http://localhost:7777/users`)
             .then(res=>res.json())
@@ -29,7 +30,9 @@ const UsersProvider = ({children}) => {
                 setUsers,
                 UsersAction,
                 currentUser,
-                setCurrentUser
+                setCurrentUser,
+                loggedIn,
+                setLoggedIn
             }}
         >
             {children}
