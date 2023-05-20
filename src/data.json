@@ -26,7 +26,8 @@
             "creationTime":"1977-03-14",
             "editTime":"2023-05-17",
             "likes":7,
-            "dislikes":3
+            "dislikes":3,
+            "votedUser":[]
         },
         {
             "id":2,
@@ -36,7 +37,8 @@
             "creationTime":"1914-03-14",
             "editTime":"2021-05-17",
             "likes":9,
-            "dislikes":1
+            "dislikes":1,
+            "votedUser":[]
         },
         {
             "id":3,
@@ -46,7 +48,8 @@
             "creationTime":"1814-03-14",
             "editTime":"1955-05-17",
             "likes":10,
-            "dislikes":0
+            "dislikes":0,
+            "votedUser":[]
         }
     ],
     "questions":[

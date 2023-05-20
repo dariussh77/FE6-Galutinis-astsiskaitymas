@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import UsersContext from '../../contexts/UsersContext';
 const HeaderCSS=styled.header`
+    z-index: 7;
     position: sticky;
     top:0;
     box-shadow: 0px 10px 7px grey;
