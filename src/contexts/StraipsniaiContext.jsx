@@ -25,7 +25,7 @@ const reducer=(state,action)=>{
 const StraipsniaiProvider = ({children}) => {
     
     const [straipsniai,setStraipsniai]=useReducer(reducer,[]);
-    console.log('straipsniai: ', straipsniai);
+    //console.log('straipsniai: ', straipsniai);
     useEffect(()=>{
         fetch(`http://localhost:7777/straipsniai`)
             .then(res=>res.json())

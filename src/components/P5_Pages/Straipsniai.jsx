@@ -35,7 +35,7 @@ position: relative;
 `;
 const Straipsniai = () => {
     const {currentUser,loggedIn}=useContext(UsersContext);
-    console.log('currentUser: ', currentUser.id);
+    //console.log('currentUser: ', currentUser.id);
     const {straipsniai,strNr,setStrNr,StraipsniaiAction,setStraipsniai}=useContext(StraipsniaiContext);
     const fSekantis=()=>{
         strNr!==0?setStrNr(strNr-1):setStrNr(straipsniai.length-1);
