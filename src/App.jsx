@@ -24,6 +24,7 @@ const App=()=>{
           <Route path='/forumas' element={<ForumCards/>}/>
           <Route path='/forumas/:id' element={<ForumComments/>}/>
           <Route path='/bendruomene' element={<Bendruomene/>}/>
+          <Route path='/*' element={ <main><b>Error 404</b></main>}/>
         </Routes>
       </MainBlockCSS>
       <Footer/>

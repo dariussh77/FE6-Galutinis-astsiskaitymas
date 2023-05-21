@@ -25,14 +25,10 @@
       "img_src": "https://media.gettyimages.com/id/136267742/photo/grateful.jpg?s=2048x2048&w=gi&k=20&c=wy0WyQu1vjedG7H0h2gK_fgcMyXhu3i1k8-yZUneU-4=",
       "creationTime": "1977-03-14",
       "editTime": "2023-05-17",
-      "likes": 1,
-      "dislikes": 1,
-      "usersliked": [
-        2
-      ],
-      "usersdisliked": [
-        3
-      ]
+      "likes": 0,
+      "dislikes": 0,
+      "usersliked": [],
+      "usersdisliked": []
     },
     {
       "id": 2,
@@ -54,11 +50,9 @@
       "creationTime": "1814-03-14",
       "editTime": "1955-05-17",
       "likes": 0,
-      "dislikes": 1,
+      "dislikes": 0,
       "usersliked": [],
-      "usersdisliked": [
-        2
-      ]
+      "usersdisliked": []
     }
   ],
   "questions": [
