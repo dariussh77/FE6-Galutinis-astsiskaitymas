@@ -22,7 +22,7 @@ const MainBCss=styled.main`
 `;
 
 const Bendruomene = () => {
-    const {users,currentUser}=useContext(UsersContext);
+    const {users,currentUser,setUsers,UsersAction}=useContext(UsersContext);
     return ( 
         <MainBCss>
             <h1>Mūsų nariai:</h1>
@@ -32,6 +32,8 @@ const Bendruomene = () => {
                         key={user.id}
                         user={user}
                         currentUser={currentUser}
+                        setUsers={setUsers}
+                        UsersAction={UsersAction}
                     />)
                 }
             </div>

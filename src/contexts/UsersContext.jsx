@@ -4,7 +4,8 @@ const UsersContext=createContext();
 const UsersAction={
     get:"get_users",
     edit:"edit_user",
-    add:"add_user"
+    add:"add_user",
+    delete:"delete_user"
 };
 const reducer=(state,action)=>{
     switch(action.type){
@@ -17,6 +18,20 @@ const reducer=(state,action)=>{
             });
             console.log('action.data: ', action.data);
             return [...state, action.data];
+        case UsersAction.edit: 
+            fetch(`http://localhost:7777/users/${action.data.id}`,{
+                method:"PUT",
+                headers:{"Content-Type":"application/json"},
+                body:JSON.stringify(action.data)
+            });
+            console.log('action.data: ', action.data);
+            return state.map(el=>
+                el.id===action.data.id?action.data:el
+            );
+        case UsersAction.delete: 
+            fetch(`http://localhost:7777/users/${action.data.id}`,{method:"Delete"});
+            console.log('action.data: ', action.data);
+            return state.filter(el=>el.id!==action.data.id);
         default: return state;
     };
     

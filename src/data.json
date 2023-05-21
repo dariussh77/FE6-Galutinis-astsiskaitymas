@@ -146,19 +146,11 @@
     {
       "id": 2,
       "userName": "darius",
-      "password": "darius",
-      "admin": false,
+      "password": "77!Labas",
+      "passwordRepeat": "77!Labas",
+      "admin": true,
       "email": "darius@admin.lt",
       "avatar": "https://picsum.photos/id/823/100/100",
-      "locked": false
-    },
-    {
-      "id": 3,
-      "userName": "daiva",
-      "password": "daiva",
-      "admin": true,
-      "email": "daiva@admin.lt",
-      "avatar": "https://picsum.photos/id/602/100/100",
       "locked": false
     },
     {
@@ -169,6 +161,26 @@
       "admin": false,
       "email": "evilija@evilija.lt",
       "avatar": "http://www.menomokykla.lt/wp-content/uploads/2020/09/logo_smm3.jpg",
+      "locked": false
+    },
+    {
+      "id": "038d2465-c0d5-4d29-a1cc-aeaa82e21fca",
+      "userName": "Daiva",
+      "password": "77!Labas",
+      "passwordRepeat": "77!Labas",
+      "admin": false,
+      "email": "daiva@opa.lt",
+      "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
+      "locked": false
+    },
+    {
+      "id": "0dfaddb0-f4ae-439c-87bc-8035ef0e66ba",
+      "userName": "Ramūnas",
+      "password": "77!Labas",
+      "passwordRepeat": "77!Labas",
+      "admin": false,
+      "email": "ramunas@gmail.com",
+      "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
       "locked": false
     }
   ]

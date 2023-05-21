@@ -3,8 +3,10 @@ import * as Yup from 'yup';
 import { v4 as uuidv4 } from 'uuid';
 import { useContext } from "react";
 import UsersContext from "../../contexts/UsersContext";
+import { useNavigate } from "react-router";
 const Registracija = () => {
-    const {users,setUsers,UsersAction}=useContext(UsersContext);
+    const navigate=useNavigate();
+    const {users,setUsers,UsersAction,currentUser}=useContext(UsersContext);
     const values={
         id: uuidv4(),
         userName: "",
@@ -51,6 +53,7 @@ const Registracija = () => {
                     type:UsersAction.add,
                     data:values
                 });
+                navigate('/bendruomene');
             console.log('users: ', users);
         },
         validationSchema: validationSchema,
@@ -120,19 +123,22 @@ const Registracija = () => {
                         formik.touched.avatar&&formik.errors.avatar&&<i> {formik.errors.avatar}</i>
                     }
                 </div>
-{/*                 <div>
-                    <div>
+                {
+                    currentUser.admin
+                    &&<div>
                         <input 
                         type="checkbox" id="admin" name="admin"
-                        value={formik.values.admin}
+                        checked={formik.values.admin}
                         onChange={formik.handleChange}                        
                         onBlur={formik.handleBlur}
                         />
                         <label htmlFor="admin">admin</label>
                     </div>
-                </div> */}
+                }
+                
                 <p>* Privalomi laukeliai.</p>
-                <input type="submit" value='Registruotis'/>
+                <input type="submit" value='Registruoti'/>
+                <button onClick={()=>navigate('/bendruomene')}>Atsisakyti</button>
             </form>
         </main>
      );
