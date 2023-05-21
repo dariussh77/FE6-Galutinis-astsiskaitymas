@@ -1,8 +1,10 @@
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 import { v4 as uuidv4 } from 'uuid';
+import { useContext } from "react";
+import UsersContext from "../../contexts/UsersContext";
 const Registracija = () => {
-
+    const {users,setUsers,UsersAction}=useContext(UsersContext);
     const values={
         id: uuidv4(),
         userName: "",
@@ -42,10 +44,18 @@ const Registracija = () => {
     const formik=useFormik({
         initialValues: values,
         onSubmit:(values)=>{
-            console.log(values);
+           // console.log(values);
+            users.find(e=>e.userName==values.userName)
+                ?alert('Toks vartotojas jau užregistruotas')
+                :setUsers({
+                    type:UsersAction.add,
+                    data:values
+                });
+            console.log('users: ', users);
         },
         validationSchema: validationSchema,
     });
+    
     return ( 
         <main>
             <h1>Registruokitės:</h1>
@@ -110,7 +120,7 @@ const Registracija = () => {
                         formik.touched.avatar&&formik.errors.avatar&&<i> {formik.errors.avatar}</i>
                     }
                 </div>
-                <div>
+{/*                 <div>
                     <div>
                         <input 
                         type="checkbox" id="admin" name="admin"
@@ -120,7 +130,7 @@ const Registracija = () => {
                         />
                         <label htmlFor="admin">admin</label>
                     </div>
-                </div>
+                </div> */}
                 <p>* Privalomi laukeliai.</p>
                 <input type="submit" value='Registruotis'/>
             </form>

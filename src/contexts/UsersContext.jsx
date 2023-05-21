@@ -3,13 +3,18 @@ import { createContext, useEffect, useReducer, useState } from "react";
 const UsersContext=createContext();
 const UsersAction={
     get:"get_users",
-    edit:"edit_user"
+    edit:"edit_user",
+    add:"add_user"
 };
 const reducer=(state,action)=>{
     switch(action.type){
         case UsersAction.get: return action.data;
+        case UsersAction.add: 
+            console.log('action.data: ', action.data);
+            return [...state, action.data];
         default: return state;
-    }
+    };
+    
 }
 const UsersProvider = ({children}) => {
     const [users, setUsers]=useReducer(reducer,[]);
