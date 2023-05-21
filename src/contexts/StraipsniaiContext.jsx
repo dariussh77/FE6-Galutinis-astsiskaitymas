@@ -3,7 +3,7 @@ const StraipsniaiContext=createContext();
 const StraipsniaiAction={
     get:"get_straipsniai",
     add:"add_straipsniai",
-    likeAdd:"add_like"
+    likeAdd:"add_like",
 };
 const reducer=(state,action)=>{
     switch(action.type){

@@ -14,6 +14,9 @@ const LoginDivCSS=styled.div`
             border-radius: 25px;
             box-shadow: 10px 10px 10px grey;
         } 
+    }
+    .prisijungta{
+        cursor: pointer;
     }   
 `;
 
@@ -34,15 +37,12 @@ const NavLogin = () => {
             }else{alert('Blogi kredincialai')};
         }
     });
-    const fAtsisakyti=()=>{
-        setShowLogin(false);
-    }
     //console.log('currentUser: ', currentUser);
     return ( 
         <LoginDivCSS>
             { 
                 !showLogin
-                    ?<div>
+                    ?<div onClick={()=>setShowLogin(true)} className="prisijungta">
                         <img src={currentUser.avatar} alt={currentUser.userName} />
                         <h4>{currentUser.userName}</h4>
                     </div>
@@ -68,7 +68,7 @@ const NavLogin = () => {
                             />
                         </div>
                         <input type="submit" value='Prisijungti'/>
-                        <button onClick={()=>fAtsisakyti()}>Atsisakyti</button>
+                        <button onClick={()=>setShowLogin(false)}>Atsisakyti</button>
                     </form>  
             }
         </LoginDivCSS>
