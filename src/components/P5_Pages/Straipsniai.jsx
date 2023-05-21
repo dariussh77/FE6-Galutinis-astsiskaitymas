@@ -24,6 +24,14 @@ position: relative;
         background-color: gold;
         gap:20px;
     }
+    .listing{
+        display: flex;
+        gap: 30px;
+        position: fixed;
+        left:500px;
+        top:150px;
+        opacity: 50%;
+    }
 `;
 const Straipsniai = () => {
     const {currentUser,loggedIn}=useContext(UsersContext);
@@ -93,8 +101,8 @@ const Straipsniai = () => {
                         <p>{straipsniai[strNr].straipsnis}</p>
                     </div>
                     <div className="listing">
-                        <button onClick={()=>fAnkstesnis()}>Ankstesnis</button>
-                        <button onClick={()=>fSekantis()}>Sekantis</button>
+                        <button onClick={()=>fAnkstesnis()}>&#60;&#60;Ankstesnis</button>
+                        <button onClick={()=>fSekantis()}>Sekantis&#62;&#62;</button>
                     </div> 
                 </MainStrCSS>:<h1>...loading</h1>
             }
