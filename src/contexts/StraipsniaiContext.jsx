@@ -9,9 +9,13 @@ const reducer=(state,action)=>{
     switch(action.type){
         case StraipsniaiAction.get: return action.data;
         case StraipsniaiAction.likeAdd:
+            fetch(`http://localhost:7777/straipsniai/${action.data.id}`,{
+                method:"PUT",
+                headers:{"Content-Type":"application/json"},
+                body:JSON.stringify(action.data)
+            });
             return state.map(el=>{
-                if(el.id===action.data.id){
-                    
+                if(el.id===action.data.id){ 
                     return action.data
                 }else{return el};
             })
