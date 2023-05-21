@@ -53,6 +53,7 @@ const Registracija = () => {
                     type:UsersAction.add,
                     data:values
                 });
+                navigate('/bendruomene');
             console.log('users: ', users);
         },
         validationSchema: validationSchema,
@@ -136,7 +137,7 @@ const Registracija = () => {
                 }
                 
                 <p>* Privalomi laukeliai.</p>
-                <input type="submit" value='Registruotis'/>
+                <input type="submit" value='Registruoti'/>
                 <button onClick={()=>navigate('/bendruomene')}>Atsisakyti</button>
             </form>
         </main>

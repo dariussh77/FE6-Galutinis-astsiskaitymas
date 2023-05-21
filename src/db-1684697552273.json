@@ -25,10 +25,11 @@
       "img_src": "https://media.gettyimages.com/id/136267742/photo/grateful.jpg?s=2048x2048&w=gi&k=20&c=wy0WyQu1vjedG7H0h2gK_fgcMyXhu3i1k8-yZUneU-4=",
       "creationTime": "1977-03-14",
       "editTime": "2023-05-17",
-      "likes": 1,
+      "likes": 2,
       "dislikes": 1,
       "usersliked": [
-        2
+        2,
+        "a0c8be2a-db9c-4c5c-8311-65eee1aa7108"
       ],
       "usersdisliked": [
         3
@@ -145,8 +146,9 @@
     {
       "id": 2,
       "userName": "darius",
-      "password": "darius",
-      "admin": false,
+      "password": "77!Labas",
+      "passwordRepeat": "77!Labas",
+      "admin": true,
       "email": "darius@admin.lt",
       "avatar": "https://picsum.photos/id/823/100/100",
       "locked": false
@@ -154,10 +156,31 @@
     {
       "id": 3,
       "userName": "daiva",
-      "password": "daiva",
+      "password": "77!Labas",
+      "passwordRepeat": "77!Labas",
       "admin": true,
-      "email": "daiva@admin.lt",
+      "email": "daiva@adminas.lt",
       "avatar": "https://picsum.photos/id/602/100/100",
+      "locked": true
+    },
+    {
+      "id": "a0c8be2a-db9c-4c5c-8311-65eee1aa7108",
+      "userName": "Evilija",
+      "password": "77!Labas",
+      "passwordRepeat": "77!Labas",
+      "admin": false,
+      "email": "evilija@evilija.lt",
+      "avatar": "http://www.menomokykla.lt/wp-content/uploads/2020/09/logo_smm3.jpg",
+      "locked": false
+    },
+    {
+      "id": "2e8abb21-be2d-42a0-a290-a153b5d77cf2",
+      "userName": "Ramūnas",
+      "password": "77!Labas",
+      "passwordRepeat": "77!Labas",
+      "admin": true,
+      "email": "ramunas@gmail.com",
+      "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
       "locked": false
     }
   ]

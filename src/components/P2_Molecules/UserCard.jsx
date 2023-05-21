@@ -1,11 +1,8 @@
 import { useNavigate } from "react-router";
 
-const UserCard = ({user,currentUser}) => {
+const UserCard = ({user,currentUser,setUsers,UsersAction}) => {
+    console.log('UsersAction: ', UsersAction);
     const navigate=useNavigate();
-    
-/*     const fEditUserClick=()=>{
-    navigate(`/editUser/${user.id}`,{state:user});
-    }; */
     //console.log('currentUser: ', currentUser);
     return ( 
         <div className="usercard">
@@ -15,7 +12,7 @@ const UserCard = ({user,currentUser}) => {
                 currentUser.admin
                     &&<>
                         <button onClick={()=>navigate(`/editUser/${user.id}`,{state:user})} >Redaguoti</button>
-                        <button>Trinti</button>
+                        <button onClick={()=>setUsers({type:UsersAction.delete, data:user})}>Trinti</button>
                     </>
             }
         </div>

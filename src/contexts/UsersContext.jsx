@@ -28,6 +28,10 @@ const reducer=(state,action)=>{
             return state.map(el=>
                 el.id===action.data.id?action.data:el
             );
+        case UsersAction.delete: 
+            fetch(`http://localhost:7777/users/${action.data.id}`,{method:"Delete"});
+            console.log('action.data: ', action.data);
+            return state.filter(el=>el.id!==action.data.id);
         default: return state;
     };
     
