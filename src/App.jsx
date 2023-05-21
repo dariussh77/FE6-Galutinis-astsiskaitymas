@@ -9,6 +9,7 @@ import ForumCards from './components/P5_Pages/ForumCards';
 import ForumComments from './components/P5_Pages/ForumComments';
 import Bendruomene from './components/P5_Pages/Bendruomene';
 import Registracija from './components/P5_Pages/Registracija';
+import EditUser from './components/P5_Pages/Edituser';
 const MainBlockCSS=styled.div`
   display: flex;
 `;
@@ -26,6 +27,7 @@ const App=()=>{
           <Route path='/forumas/:id' element={<ForumComments/>}/>
           <Route path='/bendruomene' element={<Bendruomene/>}/>
           <Route path='/register' element={<Registracija/>}/>
+          <Route path='/editUser/:id' element={<EditUser/>}/>
           <Route path='/*' element={ <main><b>Error 404</b></main>}/>
         </Routes>
       </MainBlockCSS>
