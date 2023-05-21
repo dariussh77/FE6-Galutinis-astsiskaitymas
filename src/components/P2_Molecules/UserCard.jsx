@@ -1,7 +1,7 @@
 const UserCard = ({user,currentUser}) => {
-    console.log('currentUser: ', currentUser);
+    //console.log('currentUser: ', currentUser);
     return ( 
-        <div>
+        <div className="usercard">
             <h2>{user.userName}</h2>
             <img src={user.avatar} alt={user.userName} />
             {
