@@ -10,7 +10,7 @@ const EditUser = () => {
     const [changePSWD,setChangePSWD]=useState(false);
     const user=useLocation();
     const navigate=useNavigate();
-    const {setUsers,UsersAction}=useContext(UsersContext);
+    const {setUsers,UsersAction,currentUser}=useContext(UsersContext);
     const values={
         id: user.state.id,
         userName: user.state.userName,
@@ -71,6 +71,7 @@ const EditUser = () => {
                     value={formik.values.userName}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
+                    readOnly
                     />
                     {
                         formik.touched.userName&&formik.errors.userName&&<i> {formik.errors.userName}</i>
@@ -137,28 +138,34 @@ const EditUser = () => {
                         formik.touched.avatar&&formik.errors.avatar&&<i> {formik.errors.avatar}</i>
                     }
                 </div>
-                <div>
-                    <div>
-                        <input 
-                        type="checkbox" id="admin" name="admin"
-                        checked={formik.values.admin}
-                        onChange={formik.handleChange}                        
-                        onBlur={formik.handleBlur}
-                        />
-                        <label htmlFor="admin">admin</label>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <input 
-                        type="checkbox" id="locked" name="locked"
-                        checked={formik.values.locked}
-                        onChange={formik.handleChange}                        
-                        onBlur={formik.handleBlur}
-                        />
-                        <label htmlFor="locked">locked</label>
-                    </div>
-                </div>
+                {
+                    currentUser.admin
+                    ?<>
+                        <div>
+                            <div>
+                                <input 
+                                type="checkbox" id="admin" name="admin"
+                                checked={formik.values.admin}
+                                onChange={formik.handleChange}                        
+                                onBlur={formik.handleBlur}
+                                />
+                                <label htmlFor="admin">admin</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input 
+                                type="checkbox" id="locked" name="locked"
+                                checked={formik.values.locked}
+                                onChange={formik.handleChange}                        
+                                onBlur={formik.handleBlur}
+                                />
+                                <label htmlFor="locked">locked</label>
+                            </div>
+                        </div>
+                    </>:<></>
+                }
+                
                 <p>* Privalomi laukeliai.</p>
                 <input type="submit" value='Koreguoti'/>
                 <button onClick={()=>navigate('/bendruomene')}>Atsisakyti</button>

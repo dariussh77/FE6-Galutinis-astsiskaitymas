@@ -9,22 +9,22 @@ const UserCard = ({user,currentUser,setUsers,UsersAction}) => {
                         <h2>{user.userName}</h2>
                         <img src={user.avatar} alt={user.userName} />
                         {
-                            currentUser.admin
-                                &&<>
+                            currentUser.admin || currentUser.id===user.id
+                                ?<>
                                     <button onClick={()=>navigate(`/editUser/${user.id}`,{state:user})} >Redaguoti</button>
                                     {/* <button onClick={()=>setUsers({type:UsersAction.delete, data:user})}>Trinti</button> */}
-                                </>
+                                </>:<></>
                         }
                     </div>
                     :<div className="usercard">
                         <h2>{user.userName}</h2>
                         <img src={user.avatar} alt={user.userName} />
                         {
-                            currentUser.admin
-                                &&<>
+                            currentUser.admin || currentUser.id==user.id
+                                ?<>
                                     <button onClick={()=>navigate(`/editUser/${user.id}`,{state:user})} >Redaguoti</button>
                                     {/* <button onClick={()=>setUsers({type:UsersAction.delete, data:user})}>Trinti</button> */}
-                                </>
+                                </>:<></>
                         }
                     </div>
             }
