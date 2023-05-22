@@ -6,3 +6,5 @@
 Geros Dienos
 
 Projektas parengtas - https://thephilosophyforum.com/ pavyzdžiu.
+
+Pastabos ateičiai: https://glitch.com/ arba https://www.mongodb.com/ - susikurti DB online DB. ReackNative - Phone Applicacijų kūrimas.

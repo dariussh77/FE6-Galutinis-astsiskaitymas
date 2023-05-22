@@ -15,6 +15,9 @@ const MainBCss=styled.main`
                 border-radius: 50px;
             }
         }
+        .locked{
+            opacity: 50%;
+        }
         display: flex;
         flex-wrap: wrap;
         gap:20px

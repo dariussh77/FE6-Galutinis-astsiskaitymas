@@ -30,10 +30,12 @@ const NavLogin = () => {
         initialValues:values,
         onSubmit:(values)=>{
             //console.log('values: ', values);
-            if(users.find(e=>e.userName===values.userName)&&users.find(e=>e.password===values.password)){
+            if(users.find(e=>e.userName===values.userName)&&users.find(e=>e.password===values.password&&!users.find(e=>e.userName===values.userName).locked)){
                 setCurrentUser(users.find(e=>e.userName===values.userName));
                 setLoggedIn(true);
                 setShowLogin(false);
+            }else if(users.find(e=>e.userName===values.userName)&&users.find(e=>e.userName===values.userName).locked){
+                alert('Vartotojas deaktyvuotas')
             }else{alert('Blogi kredincialai')};
         }
     });

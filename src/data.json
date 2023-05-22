@@ -164,7 +164,7 @@
       "locked": false
     },
     {
-      "id": "038d2465-c0d5-4d29-a1cc-aeaa82e21fca",
+      "id": 3,
       "userName": "Daiva",
       "password": "77!Labas",
       "passwordRepeat": "77!Labas",
@@ -181,7 +181,7 @@
       "admin": false,
       "email": "ramunas@gmail.com",
       "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
-      "locked": false
+      "locked": true
     }
   ]
 }
