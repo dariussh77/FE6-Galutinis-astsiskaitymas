@@ -3,26 +3,48 @@ import { useFormik } from "formik";
 import UsersContext from "../../contexts/UsersContext";
 import styled from 'styled-components';
 import { compareSync } from "bcryptjs";
+import { useNavigate } from "react-router-dom";
 const LoginDivCSS=styled.div`
     height: 100px;
     >div{
         padding: 20px;
         display: flex;
         gap:20px;
+        align-items: center;
         >img{
             width: 50px;
             height: 50px;
             border-radius: 25px;
             box-shadow: 10px 10px 10px grey;
-        } 
-    }
-    .prisijungta{
-        cursor: pointer;
-    }   
+            cursor: pointer;
+        }
+        button{
+            height: 20px;
+            border-radius: 10px;
+        }
+        h4{
+           cursor: pointer; 
+        }
+    } 
 `;
-
 const NavLogin = () => {
-    const {users,setUsers,setCurrentUser,currentUser,loggedIn,setLoggedIn,showLogin,setShowLogin}=useContext(UsersContext);
+    const {users,setCurrentUser,currentUser,setLoggedIn,showLogin,setShowLogin,loggedIn}=useContext(UsersContext);
+    const navigate=useNavigate();
+    const fClickLogOut=()=>{
+        navigate('/');
+        setLoggedIn(false);
+        setShowLogin(false);
+        setCurrentUser({
+                id:0,
+                userName:"Svečias",
+                password:"",
+                admin:false,
+                email:"",
+                avatar:"https://missionvet.ca/wp-content/uploads/2020/01/User-Profile-PNG-1-812x812.png",
+                locked:false
+        });
+        
+    };
     const values={
         userName:'',
         password:''
@@ -30,8 +52,6 @@ const NavLogin = () => {
     const formik=useFormik({
         initialValues:values,
         onSubmit:(values)=>{
-            //console.log('values: ', values);
-            console.log('sdgfsd ', users.find(e=>e.userName===values.userName).password);
             if(
             users.find(e=>e.userName===values.userName)
             &&compareSync(values.password,users.find(e=>e.userName===values.userName).password)
@@ -44,15 +64,19 @@ const NavLogin = () => {
             }else{alert('Blogi kredincialai')};
         }
     });
-    //console.log('currentUser: ', currentUser);
     return ( 
         <LoginDivCSS>
             { 
                 !showLogin
-                    ?<div onClick={()=>setShowLogin(true)} className="prisijungta">
-                        <img src={currentUser.avatar} alt={currentUser.userName} />
-                        <h4>{currentUser.userName}</h4>
-                    </div>
+                    ?<>
+                        <div  className="prisijungta">
+                            <img onClick={()=>setShowLogin(true)} src={currentUser.avatar} alt={currentUser.userName} />
+                            <h4 onClick={()=>setShowLogin(true)}>{currentUser.userName}</h4>
+                            {loggedIn&&<button onClick={()=>fClickLogOut()}>Atsijungti</button>}
+                            {!loggedIn&&<button onClick={()=>setShowLogin(true)}>Prisijungti</button>}
+                        </div>
+                        
+                    </>
                     :<form onSubmit={formik.handleSubmit}>
                         <div>
                             <label htmlFor="userName">Vartotojas</label>

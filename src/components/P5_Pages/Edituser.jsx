@@ -2,9 +2,9 @@ import { useLocation,useNavigate} from "react-router";
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 import { useContext } from "react";
-import UsersContext from "../../contexts/UsersContext";
 import { useState } from "react";
-
+import { hashSync } from "bcryptjs";
+import UsersContext from "../../contexts/UsersContext";
 
 const EditUser = () => {
     const [changePSWD,setChangePSWD]=useState(false);
@@ -14,8 +14,8 @@ const EditUser = () => {
     const values={
         id: user.state.id,
         userName: user.state.userName,
-        password: user.state.password,
-        passwordRepeat: user.state.passwordRepeat,
+        password: '1!Aaaaabbbb',
+        passwordRepeat: '1!Aaaaabbbb',
         admin: user.state.admin,
         email: user.state.email,
         avatar: user.state.avatar,
@@ -50,16 +50,33 @@ const EditUser = () => {
     const formik=useFormik({
         initialValues: values,
         onSubmit:(values)=>{
-            console.log('values: ', values);
-            setUsers({
+            changePSWD
+            ?setUsers({
                 type:UsersAction.edit,
-                data:values
-            });
+                data:{
+                    id:values.id,
+                    userName:values.userName,
+                    password:hashSync(values.password),
+                    admin:values.admin,
+                    email:values.email,
+                    avatar:values.avatar,
+                    locked:values.locked
+            }})
+            :setUsers({
+                type:UsersAction.edit,
+                data:{
+                    id:values.id,
+                    userName:values.userName,
+                    password:user.state.password,
+                    admin:values.admin,
+                    email:values.email,
+                    avatar:values.avatar,
+                    locked:values.locked
+            }});
             navigate('/bendruomene');
         },
         validationSchema: validationSchema,
     });
-    
     return ( 
         <main>
             <h1>Redaguokite vartotoją:{user.state.userName}</h1>

@@ -137,7 +137,7 @@
     {
       "id": 1,
       "userName": "adminas",
-      "password": "adminas",
+      "password": "$2a$10$2TcLks8ncOLjGoHWj5a/m.vgfCKf3V5AUVA.d37ZcnROWIO5SSdPu",
       "admin": true,
       "email": "admin@admin.lt",
       "avatar": "https://picsum.photos/id/548/100/100",
@@ -146,7 +146,7 @@
     {
       "id": 2,
       "userName": "darius",
-      "password": "77!Labas",
+      "password": "$2a$10$yxvMoBxAuBiDDGVmuLxA1.OPjya6Agf9t0pcnhEpWv2jovQmV4NE.",
       "admin": true,
       "email": "darius@admin.lt",
       "avatar": "https://picsum.photos/id/823/100/100",
@@ -191,11 +191,11 @@
     {
       "id": "0fdf1af7-8372-431e-a4b9-7a02a5abefa3",
       "userName": "Hashed2",
-      "password": "$2a$10$vTp4KRULTXMmj/577Hl8EeK9MZBtzTFfqcGm5jIJYeYMKkV8CPPHS",
-      "admin": false,
+      "password": "$2a$10$UUl4XSpJRxBQoKTzG8crn.CW3xiM.sou4d.8j.B5NwMECl3kgb8US",
+      "admin": true,
       "email": "dariussh77@gmail.com",
       "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
-      "locked": false
+      "locked": true
     }
   ]
 }

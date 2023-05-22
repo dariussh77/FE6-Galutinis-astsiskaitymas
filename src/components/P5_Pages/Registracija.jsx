@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { useContext } from "react";
 import UsersContext from "../../contexts/UsersContext";
 import { useNavigate } from "react-router";
-import {compareSync,hashSync} from 'bcryptjs';
+import {hashSync} from 'bcryptjs';
 const Registracija = () => {
     const navigate=useNavigate();
     const {users,setUsers,UsersAction,currentUser}=useContext(UsersContext);
@@ -69,7 +69,7 @@ const Registracija = () => {
     
     return ( 
         <main>
-            <h1>Registruokitės:</h1>
+            <h1>Registracija:</h1>
             <form onSubmit={formik.handleSubmit}>
                 <div>
                     <label htmlFor="userName">*Vartotojo vardas: </label>

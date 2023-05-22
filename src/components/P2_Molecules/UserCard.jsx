@@ -1,7 +1,10 @@
 import { useNavigate } from "react-router";
 
-const UserCard = ({user,currentUser,setUsers,UsersAction}) => {
+const UserCard = ({user,currentUser}) => {
     const navigate=useNavigate();
+    const fClickUserEdit=()=>{
+        navigate(`/editUser/${user.id}`,{state:user});
+    }
     return ( 
         <>
             {
@@ -22,7 +25,7 @@ const UserCard = ({user,currentUser,setUsers,UsersAction}) => {
                         {
                             currentUser.admin || currentUser.id==user.id
                                 ?<>
-                                    <button onClick={()=>navigate(`/editUser/${user.id}`,{state:user})} >Redaguoti</button>
+                                    <button onClick={()=>fClickUserEdit()} >Redaguoti</button>
                                     {/* <button onClick={()=>setUsers({type:UsersAction.delete, data:user})}>Trinti</button> */}
                                 </>:<></>
                         }

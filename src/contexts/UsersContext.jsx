@@ -19,10 +19,11 @@ const reducer=(state,action)=>{
             return [...state, action.data];
         case UsersAction.edit: 
             fetch(`http://localhost:7777/users/${action.data.id}`,{
-                method:"PUT",
+                method:"PATCH",
                 headers:{"Content-Type":"application/json"},
                 body:JSON.stringify(action.data)
             });
+            console.log('action.data: ', action.data);
             return state.map(el=>
                 el.id===action.data.id?action.data:el
             );
@@ -65,7 +66,7 @@ const UsersProvider = ({children}) => {
                 loggedIn,
                 setLoggedIn,
                 showLogin,
-                setShowLogin
+                setShowLogin,
             }}
         >
             {children}

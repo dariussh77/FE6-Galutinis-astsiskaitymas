@@ -25,7 +25,7 @@ const MainBCss=styled.main`
 `;
 
 const Bendruomene = () => {
-    const {users,currentUser,setUsers,UsersAction}=useContext(UsersContext);
+    const {users,currentUser,setUsers,UsersAction,setShowLogout}=useContext(UsersContext);
     return ( 
         <MainBCss>
             <h1>Mūsų nariai:</h1>
@@ -37,6 +37,7 @@ const Bendruomene = () => {
                         currentUser={currentUser}
                         setUsers={setUsers}
                         UsersAction={UsersAction}
+                        setShowLogout={setShowLogout}
                     />)
                 }
             </div>
