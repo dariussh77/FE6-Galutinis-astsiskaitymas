@@ -28,7 +28,7 @@ const App=()=>{
           <Route path='/bendruomene' element={<Bendruomene/>}/>
           <Route path='/register' element={<Registracija/>}/>
           <Route path='/editUser/:id' element={<EditUser/>}/>
-          <Route path='/*' element={ <main><b>Error 404</b></main>}/>
+          <Route path='*' element={ <main><b>Error 404</b></main>}/>
         </Routes>
       </MainBlockCSS>
       <Footer/>
