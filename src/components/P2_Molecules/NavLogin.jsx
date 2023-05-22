@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useFormik } from "formik";
 import UsersContext from "../../contexts/UsersContext";
 import styled from 'styled-components';
+import { compareSync } from "bcryptjs";
 const LoginDivCSS=styled.div`
     height: 100px;
     >div{
@@ -30,7 +31,11 @@ const NavLogin = () => {
         initialValues:values,
         onSubmit:(values)=>{
             //console.log('values: ', values);
-            if(users.find(e=>e.userName===values.userName)&&users.find(e=>e.password===values.password&&!users.find(e=>e.userName===values.userName).locked)){
+            console.log('sdgfsd ', users.find(e=>e.userName===values.userName).password);
+            if(
+            users.find(e=>e.userName===values.userName)
+            &&compareSync(values.password,users.find(e=>e.userName===values.userName).password)
+            &&!users.find(e=>e.userName===values.userName).locked){
                 setCurrentUser(users.find(e=>e.userName===values.userName));
                 setLoggedIn(true);
                 setShowLogin(false);

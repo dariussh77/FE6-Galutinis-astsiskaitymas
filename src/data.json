@@ -147,7 +147,6 @@
       "id": 2,
       "userName": "darius",
       "password": "77!Labas",
-      "passwordRepeat": "77!Labas",
       "admin": true,
       "email": "darius@admin.lt",
       "avatar": "https://picsum.photos/id/823/100/100",
@@ -157,7 +156,6 @@
       "id": "a0c8be2a-db9c-4c5c-8311-65eee1aa7108",
       "userName": "Evilija",
       "password": "77!Labas",
-      "passwordRepeat": "77!Labas",
       "admin": false,
       "email": "evilija@evilija.lt",
       "avatar": "http://www.menomokykla.lt/wp-content/uploads/2020/09/logo_smm3.jpg",
@@ -167,7 +165,6 @@
       "id": 3,
       "userName": "Daiva",
       "password": "77!Labas",
-      "passwordRepeat": "77!Labas",
       "admin": false,
       "email": "daiva@opa.lt",
       "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
@@ -177,11 +174,28 @@
       "id": "0dfaddb0-f4ae-439c-87bc-8035ef0e66ba",
       "userName": "Ramūnas",
       "password": "77!Labas",
-      "passwordRepeat": "77!Labas",
       "admin": false,
       "email": "ramunas@gmail.com",
       "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
       "locked": true
+    },
+    {
+      "id": "9772bbb3-a491-428d-8395-29ce7f33a130",
+      "userName": "Hashed",
+      "password": "$2a$10$2TcLks8ncOLjGoHWj5a/m.vgfCKf3V5AUVA.d37ZcnROWIO5SSdPu",
+      "admin": false,
+      "email": "dariussh77@gmail.com",
+      "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
+      "locked": false
+    },
+    {
+      "id": "0fdf1af7-8372-431e-a4b9-7a02a5abefa3",
+      "userName": "Hashed2",
+      "password": "$2a$10$vTp4KRULTXMmj/577Hl8EeK9MZBtzTFfqcGm5jIJYeYMKkV8CPPHS",
+      "admin": false,
+      "email": "dariussh77@gmail.com",
+      "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
+      "locked": false
     }
   ]
 }

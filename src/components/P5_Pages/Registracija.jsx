@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { useContext } from "react";
 import UsersContext from "../../contexts/UsersContext";
 import { useNavigate } from "react-router";
+import {compareSync,hashSync} from 'bcryptjs';
 const Registracija = () => {
     const navigate=useNavigate();
     const {users,setUsers,UsersAction,currentUser}=useContext(UsersContext);
@@ -51,8 +52,15 @@ const Registracija = () => {
                 ?alert('Toks vartotojas jau užregistruotas')
                 :setUsers({
                     type:UsersAction.add,
-                    data:values
-                });
+                    data:{
+                        id:values.id,
+                        userName:values.userName,
+                        password:hashSync(values.password),
+                        admin:values.admin,
+                        email:values.email,
+                        avatar:values.avatar,
+                        locked:values.locked
+                }});
                 navigate('/bendruomene');
             console.log('users: ', users);
         },
