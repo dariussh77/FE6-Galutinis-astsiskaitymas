@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import UsersContext from '../../contexts/UsersContext';
 const HeaderCSS=styled.header`
     height: 80px;
-    z-index: 7;
+    z-index: 100;
     background-size: cover;
     position: sticky;
     top:0;

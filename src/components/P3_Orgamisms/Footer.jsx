@@ -5,12 +5,15 @@ const FooterCSS=styled.footer`
     height:40px;
     width: 100vw;
     box-shadow: 0px 0px 20px 0px grey;
-    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:gold;
 `;
 const Footer = () => {
     return ( 
         <FooterCSS>
-            Footeris
+            All Wrigts Reserved @
         </FooterCSS>
      );
 }

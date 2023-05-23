@@ -8,13 +8,13 @@ import { useFormik } from "formik";
 import { v4 as uuidv4 } from 'uuid';
 import QuestionsContext from "../../contexts/QuestionsContext";
 const MainCommentsCSS=styled.main`
+    position: relative;
      width: 100%;
     .questionDiv{
         margin: 20px;
         border: 1px solid black;
         >div{
             display: column;
-            justify-content: space-between;
             >img{
                 height: 50px;
                 border-radius: 25px;
@@ -28,6 +28,25 @@ const MainCommentsCSS=styled.main`
     .questionDiv{
         i{
             cursor: pointer;
+        }
+    }
+    .qspec{
+        display: flex;
+        justify-content: left;
+        gap: 20px;
+    }
+    .thumbsqe{
+        position: absolute;
+        top:75px;
+        left: 600px;
+        display: flex;
+        gap:10px;
+    }
+    form{
+        padding: 20px;
+        display: flex;
+        textarea{
+            resize: none;
         }
     }
 `;
@@ -145,7 +164,7 @@ const{answers,setAnswers,AnswerAction}=useContext(AnswersContext);
                     currentQ&&users.find(e=>e.id===currentQ.creator)&&
                     <>
                         <h1>KLAUSIMAS:</h1>
-                        <div>
+                        <div className="qspec">
                             <img src={users.find(e=>e.id===currentQ.creator).avatar} alt={users.find(e=>e.id===currentQ.creator).userName} />
                             <h4>{users.find(e=>e.id===currentQ.creator).userName}</h4>
                             <h5>{currentQ.tema}</h5>
@@ -170,7 +189,7 @@ const{answers,setAnswers,AnswerAction}=useContext(AnswersContext);
                                 <textarea
                                     type="text"
                                     name="answer" id="answer" 
-                                    cols="100" rows="1"
+                                    cols="100" rows="2"
                                     value={formik.values.answer}
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
