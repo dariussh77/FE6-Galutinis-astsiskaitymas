@@ -151,6 +151,7 @@ const{answers,setAnswers,AnswerAction}=useContext(AnswersContext);
                             <h5>{currentQ.tema}</h5>
                         </div>
                         <h2>{currentQ.question}</h2> 
+                        <h6>Viso {currentQ.anwCount} atsakymai</h6>
                         <div className="commentsDiv">
                             {
                                 answers&&

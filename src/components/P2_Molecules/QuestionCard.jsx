@@ -13,6 +13,11 @@ const CardCSS = styled.div`
     h3:hover{
         cursor: pointer;
     }
+    .thumbsqc{
+        display: flex ;
+        align-items: center;
+        gap:5px
+    }
 `; 
 const QuestionCard = ({question}) => {
     const navigate=useNavigate();
@@ -28,6 +33,11 @@ const QuestionCard = ({question}) => {
             <h4>{users.find(e=>e.id===question.creator).userName}</h4>
             <h3 onClick={()=>fEnterComments()}>--{question.question}--</h3>
             <h5>{question.tema}</h5>
+            <h6>Komentarai: {question.anwCount}</h6>
+            <div className="thumbsqc">
+                    <i className="bi bi-hand-thumbs-up">{question.likes}</i>
+                    <i className="bi bi-hand-thumbs-down"> {question.dislikes}</i>
+            </div> 
 
         </CardCSS>
      );
