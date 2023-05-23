@@ -52,28 +52,28 @@ const AnswerCard = ({answer}) => {
                 usersdisliked:answer.usersdisliked.filter(e=>e!==currentUser.id)
             }})
             :loggedIn&&answer.usersliked.includes(currentUser.id)?alert('Jau balsavote'):alert('Esate neprisijungęs');
-};
-const fAddDislike=()=>{
-        loggedIn&&!answer.usersdisliked.includes(currentUser.id)&&!answer.usersliked.includes(currentUser.id)
-            ?setAnswers({
-                type:AnswerAction.likeAdd,
-                data:{...answer,
-                dislikes:(answer.dislikes+1), 
-                likes:(answer.likes), 
-                usersdisliked:[...answer.usersdisliked,currentUser.id],
-                usersliked:answer.usersliked.filter(e=>e!==currentUser.id)
-            }})
-            :loggedIn&&!answer.usersdisliked.includes(currentUser.id)&&answer.usersliked.includes(currentUser.id)
-            ?setAnswers({
-                type:AnswerAction.likeAdd,
-                data:{...answer,
-                dislikes:(answer.dislikes+1), 
-                likes:(answer.likes-1), 
-                usersdisliked:[...answer.usersdisliked,currentUser.id],
-                usersliked:answer.usersliked.filter(e=>e!==currentUser.id)
-            }})
-            :loggedIn&&answer.usersdisliked.includes(currentUser.id)?alert('Jau balsavote'):alert('Esate neprisijungęs');
-};
+    };
+    const fAddDislike=()=>{
+            loggedIn&&!answer.usersdisliked.includes(currentUser.id)&&!answer.usersliked.includes(currentUser.id)
+                ?setAnswers({
+                    type:AnswerAction.likeAdd,
+                    data:{...answer,
+                    dislikes:(answer.dislikes+1), 
+                    likes:(answer.likes), 
+                    usersdisliked:[...answer.usersdisliked,currentUser.id],
+                    usersliked:answer.usersliked.filter(e=>e!==currentUser.id)
+                }})
+                :loggedIn&&!answer.usersdisliked.includes(currentUser.id)&&answer.usersliked.includes(currentUser.id)
+                ?setAnswers({
+                    type:AnswerAction.likeAdd,
+                    data:{...answer,
+                    dislikes:(answer.dislikes+1), 
+                    likes:(answer.likes-1), 
+                    usersdisliked:[...answer.usersdisliked,currentUser.id],
+                    usersliked:answer.usersliked.filter(e=>e!==currentUser.id)
+                }})
+                :loggedIn&&answer.usersdisliked.includes(currentUser.id)?alert('Jau balsavote'):alert('Esate neprisijungęs');
+    };
     return ( 
         <DivAnsCss>
             <div>
@@ -81,16 +81,10 @@ const fAddDislike=()=>{
                 <h5>{users.find(e=>e.id===answer.creator).userName}</h5>
             </div>
             <p>{answer.answer}</p>
-
-
-
             <div className="thumbsq">
                 <i onClick={()=>fAddLike()} className="bi bi-hand-thumbs-up">{answer.likes}</i>
                 <i onClick={()=>fAddDislike()} className="bi bi-hand-thumbs-down"> {answer.dislikes}</i>
-            </div>
-
-
-            
+            </div>         
         </DivAnsCss>
      );
 }

@@ -18,7 +18,7 @@ const QuestionCard = ({question}) => {
     const navigate=useNavigate();
     const{users}=useContext(UsersContext);
     const fEnterComments=()=>{
-        navigate(`/forumas/${question.id}`);
+        navigate(`/forumas/${question.id}`,{state:question});
     };
     //console.log('users: ', users);
     //console.log('r: ', users.find(e=>e.id===question.creator));

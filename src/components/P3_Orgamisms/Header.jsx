@@ -5,6 +5,7 @@ import UsersContext from '../../contexts/UsersContext';
 const HeaderCSS=styled.header`
     height: 80px;
     z-index: 7;
+    background-size: cover;
     position: sticky;
     top:0;
     box-shadow: 0px 10px 7px grey;

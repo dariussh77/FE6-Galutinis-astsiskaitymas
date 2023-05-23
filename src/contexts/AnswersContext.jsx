@@ -16,8 +16,6 @@ const reducer=(state,action)=>{
                 body: JSON.stringify(action.data)
             });
             return [...state,action.data ];
-
-            //
         case AnswerAction.likeAdd:
             fetch(`http://localhost:7777/answers/${action.data.id}`,{
                 method:"PUT",
@@ -28,8 +26,6 @@ const reducer=(state,action)=>{
                 if(el.id===action.data.id){ 
                     return action.data
                 }else{return el};
-//
-
         });
         default: return state;
     }

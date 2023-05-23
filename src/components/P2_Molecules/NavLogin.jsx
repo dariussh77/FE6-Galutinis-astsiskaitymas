@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import { compareSync } from "bcryptjs";
 import { useNavigate } from "react-router-dom";
 const LoginDivCSS=styled.div`
+    padding: 5px;
+    padding-top: 20px;
     height: 100px;
     >div{
         padding: 20px;

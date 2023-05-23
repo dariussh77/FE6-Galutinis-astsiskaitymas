@@ -82,15 +82,11 @@
       "creator": 1,
       "tema": "metafizika",
       "question": "Kaip realiatyvo teorija atsiliepia filosofijoje?",
-      "likes": 0,
-      "dislikes": 3,
+      "likes": 10,
+      "dislikes": 5,
       "modified": false,
       "usersliked": [],
-      "usersdisliked": [
-        1,
-        "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
-        2
-      ]
+      "usersdisliked": []
     },
     {
       "id": 2,
@@ -98,27 +94,20 @@
       "tema": "filosofija bendrai",
       "question": "Kas yra netektis?",
       "likes": 1,
-      "dislikes": 1,
+      "dislikes": 9,
       "modified": false,
-      "usersliked": [
-        "3fb23c7e-16ba-47f7-b253-653b86e57d5d"
-      ],
-      "usersdisliked": [
-        2
-      ]
+      "usersliked": [],
+      "usersdisliked": []
     },
     {
       "id": 3,
       "creator": 1,
       "tema": "metafizika",
       "question": "Kodėl verta mąstyti?",
-      "likes": 2,
-      "dislikes": 0,
+      "likes": 10,
+      "dislikes": 5,
       "modified": false,
-      "usersliked": [
-        1,
-        2
-      ],
+      "usersliked": [],
       "usersdisliked": []
     }
   ],
@@ -141,17 +130,14 @@
       "replayTo": "questions",
       "statementId": 2,
       "answer": "Tai skirtumas tarp turėti ir neturėti...",
-      "likes": 3,
-      "dislikes": 1,
+      "likes": 2,
+      "dislikes": 0,
       "modified": false,
       "usersliked": [
         "a0c8be2a-db9c-4c5c-8311-65eee1aa7108",
-        1,
-        2
+        1
       ],
-      "usersdisliked": [
-        "3fb23c7e-16ba-47f7-b253-653b86e57d5d"
-      ]
+      "usersdisliked": []
     },
     {
       "id": 3,
@@ -160,12 +146,10 @@
       "statementId": 3,
       "answer": "Ar tikrai mąstai.....?",
       "likes": 0,
-      "dislikes": 1,
+      "dislikes": 0,
       "modified": false,
       "usersliked": [],
-      "usersdisliked": [
-        2
-      ]
+      "usersdisliked": []
     },
     {
       "id": 4,
@@ -174,12 +158,10 @@
       "statementId": 1,
       "answer": "O gal viskas numatyta.... Tai tik spektaklis",
       "likes": 0,
-      "dislikes": 1,
+      "dislikes": 0,
       "modified": false,
       "usersliked": [],
-      "usersdisliked": [
-        2
-      ]
+      "usersdisliked": []
     },
     {
       "id": "fbca6094-bb4c-4573-934b-50d1b1ccbf55",
