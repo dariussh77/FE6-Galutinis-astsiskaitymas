@@ -102,15 +102,14 @@
       "creator": 1,
       "tema": "filosofija bendrai",
       "question": "Kas yra netektis?",
-      "likes": 1,
-      "dislikes": 1,
+      "likes": 2,
+      "dislikes": 0,
       "modified": false,
       "usersliked": [
-        "3fb23c7e-16ba-47f7-b253-653b86e57d5d"
-      ],
-      "usersdisliked": [
+        "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
         2
       ],
+      "usersdisliked": [],
       "anwCount": 6
     },
     {
@@ -127,6 +126,21 @@
       ],
       "usersdisliked": [],
       "anwCount": 5
+    },
+    {
+      "id": "25b5eac4-6e9c-47fa-b03f-7d47059444a0",
+      "creator": "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
+      "tema": "taikomoji filosofija",
+      "question": "Ką Aš čia veikia šią naktį?",
+      "likes": 2,
+      "dislikes": 0,
+      "modified": false,
+      "usersliked": [
+        "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
+        "a0c8be2a-db9c-4c5c-8311-65eee1aa7108"
+      ],
+      "usersdisliked": [],
+      "anwCount": 0
     }
   ],
   "answers": [
@@ -259,10 +273,12 @@
       "replayTo": "questions",
       "statementId": 2,
       "answer": "Kaip šis klausimas nuteikia tave?",
-      "likes": 0,
+      "likes": 1,
       "dislikes": 0,
       "modified": false,
-      "usersliked": [],
+      "usersliked": [
+        2
+      ],
       "usersdisliked": []
     },
     {
@@ -280,24 +296,18 @@
       ]
     },
     {
-      "id": "d6c421a3-fbc9-41bf-8910-aa685d506a5b",
-      "creator": "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
+      "id": "ef881b14-84f8-45b5-b1d5-bd3a13918ec1",
+      "creator": "a0c8be2a-db9c-4c5c-8311-65eee1aa7108",
       "replayTo": "questions",
-      "statementId": 1,
-      "answer": "AU Au",
-      "likes": 0,
+      "statementId": "25b5eac4-6e9c-47fa-b03f-7d47059444a0",
+      "answer": "Kartu su šeimininku nesimiega?\n",
+      "likes": 1,
       "dislikes": 0,
-      "modified": false
-    },
-    {
-      "id": "19fd68fa-eb30-4b7f-ba0c-543a27563222",
-      "creator": "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
-      "replayTo": "questions",
-      "statementId": 3,
-      "answer": "AU Au AU",
-      "likes": 0,
-      "dislikes": 0,
-      "modified": false
+      "modified": false,
+      "usersliked": [
+        "a0c8be2a-db9c-4c5c-8311-65eee1aa7108"
+      ],
+      "usersdisliked": []
     }
   ],
   "users": [

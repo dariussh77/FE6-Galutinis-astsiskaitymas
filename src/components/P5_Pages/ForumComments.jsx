@@ -1,6 +1,6 @@
-import { useEffect, useState,useContext } from "react";
+import { useEffect,useContext } from "react";
 import UsersContext from "../../contexts/UsersContext";
-import { useLocation, useNavigate, useParams} from "react-router-dom";
+import { useNavigate, useParams} from "react-router-dom";
 import styled from 'styled-components';
 import AnswersContext from "../../contexts/AnswersContext";
 import AnswerCard from "../P2_Molecules/AnswerCard";
@@ -51,11 +51,8 @@ const MainCommentsCSS=styled.main`
     }
 `;
 const ForumComments = () => {
-    const navigate=useNavigate();
-    /* const {state}=useLocation(); */
     const{id}=useParams();
-    
-const{answers,setAnswers,AnswerAction}=useContext(AnswersContext);
+    const{answers,setAnswers,AnswerAction}=useContext(AnswersContext);
     const{setQuestions,QuestionsAction,currentQ,setCurrentQ}=useContext(QuestionsContext);
     useEffect(()=>{
         fetch(`http://localhost:7777/questions/${id}`)
@@ -71,7 +68,9 @@ const{answers,setAnswers,AnswerAction}=useContext(AnswersContext);
         answer:'',
         likes:0,
         dislikes:0,
-        modified: false
+        modified: false,
+        usersliked: [],
+        usersdisliked: []
     };
     const formik=useFormik({
         initialValues:initialValues,
@@ -86,7 +85,9 @@ const{answers,setAnswers,AnswerAction}=useContext(AnswersContext);
                     answer:values.answer,
                     likes:0,
                     dislikes:0,
-                    modified: false
+                    modified: false,
+                    usersliked: [],
+                    usersdisliked: []
             }});
             actions.resetForm(initialValues);
             setQuestions({

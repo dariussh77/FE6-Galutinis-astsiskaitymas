@@ -4,6 +4,7 @@ const QuestionsContext=createContext();
 const QuestionsAction={
     get:"get_questions",
     edit:"edit_questions",
+    add:"add_question"
 };
 const reducer=(state,action)=>{
     switch(action.type){
@@ -20,6 +21,13 @@ const reducer=(state,action)=>{
                 }else{
                     return el};
         });
+        case QuestionsAction.add:
+            fetch(`http://localhost:7777/questions/`,{
+                method:"POST",
+                headers:{"Content-Type":"application/json"},
+                body:JSON.stringify(action.data)
+            });
+            return [...state,action.data];
         default: return state;
     }
 }
