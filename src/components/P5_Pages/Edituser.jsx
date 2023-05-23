@@ -79,11 +79,12 @@ const EditUser = () => {
     });
     return ( 
         <main>
-            <h1>Redaguokite vartotoją:{user.state.userName}</h1>
+            <h1>Redaguokite vartotoją:</h1>
             <form onSubmit={formik.handleSubmit}>
                 <div>
                     <label htmlFor="userName">*Vartotojo vardas: </label>
                     <input 
+                    style={{color: "#DEDDDD"}}
                     type="text" id="userName" name="userName"
                     value={formik.values.userName}
                     onChange={formik.handleChange}

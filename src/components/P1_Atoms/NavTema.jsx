@@ -1,10 +1,12 @@
 import { useContext,useEffect } from "react";
 import QuestionsContext from "../../contexts/QuestionsContext";
 import { useNavigate } from "react-router-dom";
+import TemosContext from "../../contexts/TemosContext";
 
 
 const NavTema = ({tema}) => {
     const navigate=useNavigate();
+    const {setCurrentTema}=useContext(TemosContext);
     
     const {questions,setQuestions,QuestionsAction}=useContext(QuestionsContext);
     const fFilterTema=()=>{
@@ -22,6 +24,7 @@ const NavTema = ({tema}) => {
                 data:data.filter(el=>el.tema===tema)
             })); 
         navigate('/forumas');
+        setCurrentTema(tema);
     };
     
     return ( 
