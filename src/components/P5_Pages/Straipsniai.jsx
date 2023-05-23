@@ -23,6 +23,8 @@ position: relative;
         width:100px;
         background-color: gold;
         gap:20px;
+        opacity: 70%;
+        cursor: pointer;
     }
     .listing{
         display: flex;

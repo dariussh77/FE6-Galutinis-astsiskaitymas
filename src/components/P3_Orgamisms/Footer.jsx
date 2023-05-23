@@ -1,16 +1,19 @@
 import { styled } from "styled-components";
 const FooterCSS=styled.footer`
-    background-image: url('https://www.tylikalva.lt/granitas-g603_prekesbig374.jpg');
-    min-height:60px;
+    background-image: url('https://www.akmenstata.lt/wp-content/uploads/2021/09/MARMURAS-CALACATTA-EXTRA-BORGHINI.jpg');
+    background-size: cover;
+    height:40px;
     width: 100vw;
-    background-color: aquamarine;
-    position: fixed;
-    bottom: 0;
+    box-shadow: 0px 0px 20px 0px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:gold;
 `;
 const Footer = () => {
     return ( 
         <FooterCSS>
-            Footeris
+            All Wrigts Reserved @
         </FooterCSS>
      );
 }

@@ -1,4 +1,4 @@
-import { createContext,useEffect,useReducer } from "react";
+import { createContext,useEffect,useReducer,useState } from "react";
 const TemosContext=createContext();
 const TemosAction={
     get:"get_temos",
@@ -13,6 +13,8 @@ const reducer=(state,action)=>{
 };
 const TemosProvider = ({children}) => {
     const [temos, setTemos]=useReducer(reducer,[]);
+    const [currentTema,setCurrentTema]=useState('');
+
     
     useEffect(()=>{
         fetch(`http://localhost:7777/temos`)
@@ -27,7 +29,9 @@ const TemosProvider = ({children}) => {
             value={{
                 temos, 
                 setTemos,
-                TemosAction
+                TemosAction,
+                currentTema,
+                setCurrentTema
             }}
         >
             {children}

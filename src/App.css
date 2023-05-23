@@ -1,8 +1,11 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 main{
     padding: 20px;
-    margin-left: 250px;
-    margin-bottom: 90px;
+    padding-left: 290px;
+    margin-bottom: 10px;
+    min-height: calc(100vh - 80px - 40px - 50px);
+    background-color: lightgray;
+    width:100%
 }
 body{
     min-width: 700px;

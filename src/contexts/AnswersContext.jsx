@@ -1,12 +1,32 @@
 import { createContext, useEffect, useReducer } from "react";
 const AnswerAction={
     get:"get_answers",
-    edit:"edit_answer"
+    edit:"edit_answer",
+    create:"create_answer",
+    likeAdd:"add_like",
 };
 const AnswersContext= createContext();
 const reducer=(state,action)=>{
     switch(action.type){
         case AnswerAction.get:return action.data;
+        case AnswerAction.create:
+            fetch(`http://localhost:7777/answers`,{
+                method:"POST",
+                headers:{"Content-Type":"application/json"},
+                body: JSON.stringify(action.data)
+            });
+            return [...state,action.data ];
+        case AnswerAction.likeAdd:
+            fetch(`http://localhost:7777/answers/${action.data.id}`,{
+                method:"PUT",
+                headers:{"Content-Type":"application/json"},
+                body:JSON.stringify(action.data)
+            });
+            return state.map(el=>{
+                if(el.id===action.data.id){ 
+                    return action.data
+                }else{return el};
+        });
         default: return state;
     }
 }

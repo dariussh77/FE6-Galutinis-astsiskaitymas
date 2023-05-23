@@ -11,8 +11,10 @@ const MainBCss=styled.main`
             gap:10px;
             img{
                 width:100px;
+                height: 100px;
                 border: 1px solid black;
                 border-radius: 50px;
+                object-fit: cover;
             }
         }
         .locked{

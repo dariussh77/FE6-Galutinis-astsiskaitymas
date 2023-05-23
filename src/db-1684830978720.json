@@ -15,10 +15,6 @@
     {
       "id": 4,
       "tema": "filosofija bendrai"
-    },
-    {
-      "id": 5,
-      "tema": "VISOS TEMOS"
     }
   ],
   "straipsniai": [
@@ -64,20 +60,6 @@
       "usersdisliked": [
         2
       ]
-    },
-    {
-      "id": 4,
-      "name": "Opa",
-      "straipsnis": "Aforizmas : .",
-      "img_src": "",
-      "creationTime": "1814-03-14",
-      "editTime": "1955-05-17",
-      "likes": 0,
-      "dislikes": 1,
-      "usersliked": [],
-      "usersdisliked": [
-        2
-      ]
     }
   ],
   "questions": [
@@ -86,61 +68,33 @@
       "creator": 1,
       "tema": "metafizika",
       "question": "Kaip realiatyvo teorija atsiliepia filosofijoje?",
-      "likes": 0,
-      "dislikes": 3,
+      "likes": 10,
+      "dislikes": 5,
       "modified": false,
       "usersliked": [],
-      "usersdisliked": [
-        1,
-        "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
-        2
-      ],
-      "anwCount": 2
+      "usersdisliked": []
     },
     {
       "id": 2,
       "creator": 1,
       "tema": "filosofija bendrai",
       "question": "Kas yra netektis?",
-      "likes": 2,
-      "dislikes": 0,
+      "likes": 1,
+      "dislikes": 9,
       "modified": false,
-      "usersliked": [
-        "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
-        2
-      ],
-      "usersdisliked": [],
-      "anwCount": 6
+      "usersliked": [],
+      "usersdisliked": []
     },
     {
       "id": 3,
       "creator": 1,
       "tema": "metafizika",
       "question": "Kodėl verta mąstyti?",
-      "likes": 2,
-      "dislikes": 0,
+      "likes": 10,
+      "dislikes": 5,
       "modified": false,
-      "usersliked": [
-        1,
-        2
-      ],
-      "usersdisliked": [],
-      "anwCount": 5
-    },
-    {
-      "id": "25b5eac4-6e9c-47fa-b03f-7d47059444a0",
-      "creator": "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
-      "tema": "taikomoji filosofija",
-      "question": "Ką Aš čia veikia šią naktį?",
-      "likes": 2,
-      "dislikes": 0,
-      "modified": false,
-      "usersliked": [
-        "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
-        "a0c8be2a-db9c-4c5c-8311-65eee1aa7108"
-      ],
-      "usersdisliked": [],
-      "anwCount": 0
+      "usersliked": [],
+      "usersdisliked": []
     }
   ],
   "answers": [
@@ -150,8 +104,8 @@
       "replayTo": "questions",
       "statementId": 3,
       "answer": "Mąstau vadinasi egzistuoju...",
-      "likes": 0,
-      "dislikes": 0,
+      "likes": 10,
+      "dislikes": 5,
       "modified": false,
       "usersliked": [],
       "usersdisliked": []
@@ -162,17 +116,11 @@
       "replayTo": "questions",
       "statementId": 2,
       "answer": "Tai skirtumas tarp turėti ir neturėti...",
-      "likes": 3,
-      "dislikes": 1,
+      "likes": 10,
+      "dislikes": 5,
       "modified": false,
-      "usersliked": [
-        "a0c8be2a-db9c-4c5c-8311-65eee1aa7108",
-        1,
-        2
-      ],
-      "usersdisliked": [
-        "3fb23c7e-16ba-47f7-b253-653b86e57d5d"
-      ]
+      "usersliked": [],
+      "usersdisliked": []
     },
     {
       "id": 3,
@@ -180,13 +128,11 @@
       "replayTo": "answers",
       "statementId": 3,
       "answer": "Ar tikrai mąstai.....?",
-      "likes": 0,
-      "dislikes": 1,
+      "likes": 10,
+      "dislikes": 5,
       "modified": false,
       "usersliked": [],
-      "usersdisliked": [
-        2
-      ]
+      "usersdisliked": []
     },
     {
       "id": 4,
@@ -194,13 +140,10 @@
       "replayTo": "answers",
       "statementId": 1,
       "answer": "O gal viskas numatyta.... Tai tik spektaklis",
-      "likes": 2,
-      "dislikes": 0,
+      "likes": 10,
+      "dislikes": 5,
       "modified": false,
-      "usersliked": [
-        "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
-        2
-      ],
+      "usersliked": [],
       "usersdisliked": []
     },
     {
@@ -233,12 +176,10 @@
       "replayTo": "questions",
       "statementId": 2,
       "answer": "Ką turėti?",
-      "likes": 1,
+      "likes": 0,
       "dislikes": 0,
       "modified": false,
-      "usersliked": [
-        "a0c8be2a-db9c-4c5c-8311-65eee1aa7108"
-      ],
+      "usersliked": [],
       "usersdisliked": []
     },
     {
@@ -247,12 +188,10 @@
       "replayTo": "questions",
       "statementId": 2,
       "answer": "Ko neturėti????",
-      "likes": 1,
+      "likes": 0,
       "dislikes": 0,
       "modified": false,
-      "usersliked": [
-        1
-      ],
+      "usersliked": [],
       "usersdisliked": []
     },
     {
@@ -273,12 +212,10 @@
       "replayTo": "questions",
       "statementId": 2,
       "answer": "Kaip šis klausimas nuteikia tave?",
-      "likes": 1,
+      "likes": 0,
       "dislikes": 0,
       "modified": false,
-      "usersliked": [
-        2
-      ],
+      "usersliked": [],
       "usersdisliked": []
     },
     {
@@ -288,25 +225,9 @@
       "statementId": 2,
       "answer": "...ir kitus",
       "likes": 0,
-      "dislikes": 1,
-      "modified": false,
-      "usersliked": [],
-      "usersdisliked": [
-        1
-      ]
-    },
-    {
-      "id": "ef881b14-84f8-45b5-b1d5-bd3a13918ec1",
-      "creator": "a0c8be2a-db9c-4c5c-8311-65eee1aa7108",
-      "replayTo": "questions",
-      "statementId": "25b5eac4-6e9c-47fa-b03f-7d47059444a0",
-      "answer": "Kartu su šeimininku nesimiega?\n",
-      "likes": 1,
       "dislikes": 0,
       "modified": false,
-      "usersliked": [
-        "a0c8be2a-db9c-4c5c-8311-65eee1aa7108"
-      ],
+      "usersliked": [],
       "usersdisliked": []
     }
   ],
@@ -341,7 +262,7 @@
     {
       "id": 3,
       "userName": "Daiva",
-      "password": "$2a$10$VQbvzYL7ogMVxZMCn40vYOj5FG8/4qqumPRS0w1s6HYyXbEcnJ4NS",
+      "password": "77!Labas",
       "admin": false,
       "email": "daiva@opa.lt",
       "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
@@ -350,7 +271,7 @@
     {
       "id": "0dfaddb0-f4ae-439c-87bc-8035ef0e66ba",
       "userName": "Ramūnas",
-      "password": "$2a$10$8XN4LAIbhFH/n9OLMDRWueyM04LstzgxE0HQ2vev0XUXm6yXDBmJC",
+      "password": "77!Labas",
       "admin": false,
       "email": "ramunas@gmail.com",
       "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
@@ -373,24 +294,6 @@
       "email": "dariussh77@gmail.com",
       "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
       "locked": true
-    },
-    {
-      "id": "b065868e-692e-421e-b527-c0240a0870a4",
-      "userName": "Robis",
-      "password": "$2a$10$TmVjdMtVQPvV0C.SgsODCuryDZ2t6GBwO6pgdSluersjVsSopfzPm",
-      "admin": false,
-      "email": "sportmenas@gmail.com",
-      "avatar": "https://suvirinimopasaulis.lt/wp-content/uploads/2021/12/Suvirinimo-kauke.jpg",
-      "locked": false
-    },
-    {
-      "id": "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
-      "userName": "Smalius",
-      "password": "$2a$10$yHMQkkWwrEYtp/7xZnRxAeTE5i5OfI3uU4ABAk3gKvEhouMkaHlF2",
-      "admin": true,
-      "email": "smalius77@gmail.com",
-      "avatar": "https://www.efoto.lt/files/images/5167/pup.jpg",
-      "locked": false
     }
   ]
 }
