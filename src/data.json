@@ -67,7 +67,7 @@
       "id": 1,
       "creator": 1,
       "tema": "metafizika",
-      "question": "Kaip realiatyvo teorija atsiliepia filosofioje?",
+      "question": "Kaip realiatyvo teorija atsiliepia filosofijoje?",
       "likes": 10,
       "dislikes": 5,
       "modified": false
@@ -131,6 +131,76 @@
       "likes": 10,
       "dislikes": 5,
       "modified": false
+    },
+    {
+      "id": "fbca6094-bb4c-4573-934b-50d1b1ccbf55",
+      "creator": 1,
+      "replayTo": "questions",
+      "statementId": 3,
+      "answer": "Mąstymas padeda išlaikyt budrumą",
+      "likes": 0,
+      "dislikes": 0,
+      "modified": false
+    },
+    {
+      "id": "b19c0283-e41a-42a6-9ff1-4d638b03639c",
+      "creator": 1,
+      "replayTo": "questions",
+      "statementId": 3,
+      "answer": "Nu ir ką",
+      "likes": 0,
+      "dislikes": 0,
+      "modified": false
+    },
+    {
+      "id": "e34cf2f2-5ab8-4694-bb69-71d35143d061",
+      "creator": 1,
+      "replayTo": "questions",
+      "statementId": 2,
+      "answer": "Ką turėti?",
+      "likes": 0,
+      "dislikes": 0,
+      "modified": false
+    },
+    {
+      "id": "f89e6d0e-6bbd-4cfd-9d02-9651277dddcf",
+      "creator": 1,
+      "replayTo": "questions",
+      "statementId": 2,
+      "answer": "Ko neturėti????",
+      "likes": 0,
+      "dislikes": 0,
+      "modified": false
+    },
+    {
+      "id": "18de6615-90f0-4aac-8900-508ecd27af2f",
+      "creator": 1,
+      "replayTo": "questions",
+      "statementId": 2,
+      "answer": "Kas yra skirtumas?",
+      "likes": 0,
+      "dislikes": 0,
+      "modified": false
+    },
+    {
+      "id": "1b819527-6686-45bb-945b-979f5f5ce270",
+      "creator": "a0c8be2a-db9c-4c5c-8311-65eee1aa7108",
+      "replayTo": "questions",
+      "statementId": 2,
+      "answer": "Kaip šis klausimas nuteikia tave?",
+      "likes": 0,
+      "dislikes": 0,
+      "modified": false
+    },
+    {
+      "id": "d2c3d4cc-be25-4e50-a0b3-f029783850c5",
+      "creator": "a0c8be2a-db9c-4c5c-8311-65eee1aa7108",
+      "replayTo": "questions",
+      "statementId": 2,
+      "answer": "...ir kitus",
+      "likes": 0,
+      "dislikes": 0,
+      "modified": false
     }
   ],
   "users": [
@@ -155,7 +225,7 @@
     {
       "id": "a0c8be2a-db9c-4c5c-8311-65eee1aa7108",
       "userName": "Evilija",
-      "password": "77!Labas",
+      "password": "$2a$10$L8UE/txmEX.JqOxY7NtqMuqLEUMKuVl7tsSf1DM1JNCF9Nx1Zp7tW",
       "admin": false,
       "email": "evilija@evilija.lt",
       "avatar": "http://www.menomokykla.lt/wp-content/uploads/2020/09/logo_smm3.jpg",

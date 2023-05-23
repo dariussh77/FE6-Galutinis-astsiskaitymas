@@ -10,9 +10,9 @@ const NavTemos = () => {
             <ul>
                 {
                     temos.map(tema=><NavTema
-                                        key={tema.id}
-                                        tema={tema.tema}
-                                        />)
+                        key={tema.id}
+                        tema={tema.tema}
+                        />)
                 }
             </ul>
         </div>

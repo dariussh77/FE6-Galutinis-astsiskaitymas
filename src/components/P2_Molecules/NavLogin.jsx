@@ -43,7 +43,6 @@ const NavLogin = () => {
                 avatar:"https://missionvet.ca/wp-content/uploads/2020/01/User-Profile-PNG-1-812x812.png",
                 locked:false
         });
-        
     };
     const values={
         userName:'',
