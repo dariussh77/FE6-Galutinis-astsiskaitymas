@@ -104,8 +104,8 @@
       "replayTo": "questions",
       "statementId": 3,
       "answer": "Mąstau vadinasi egzistuoju...",
-      "likes": 0,
-      "dislikes": 0,
+      "likes": 10,
+      "dislikes": 5,
       "modified": false,
       "usersliked": [],
       "usersdisliked": []
@@ -116,13 +116,10 @@
       "replayTo": "questions",
       "statementId": 2,
       "answer": "Tai skirtumas tarp turėti ir neturėti...",
-      "likes": 2,
-      "dislikes": 0,
+      "likes": 10,
+      "dislikes": 5,
       "modified": false,
-      "usersliked": [
-        "a0c8be2a-db9c-4c5c-8311-65eee1aa7108",
-        1
-      ],
+      "usersliked": [],
       "usersdisliked": []
     },
     {
@@ -131,8 +128,8 @@
       "replayTo": "answers",
       "statementId": 3,
       "answer": "Ar tikrai mąstai.....?",
-      "likes": 0,
-      "dislikes": 0,
+      "likes": 10,
+      "dislikes": 5,
       "modified": false,
       "usersliked": [],
       "usersdisliked": []
@@ -143,8 +140,8 @@
       "replayTo": "answers",
       "statementId": 1,
       "answer": "O gal viskas numatyta.... Tai tik spektaklis",
-      "likes": 0,
-      "dislikes": 0,
+      "likes": 10,
+      "dislikes": 5,
       "modified": false,
       "usersliked": [],
       "usersdisliked": []
@@ -179,12 +176,10 @@
       "replayTo": "questions",
       "statementId": 2,
       "answer": "Ką turėti?",
-      "likes": 1,
+      "likes": 0,
       "dislikes": 0,
       "modified": false,
-      "usersliked": [
-        "a0c8be2a-db9c-4c5c-8311-65eee1aa7108"
-      ],
+      "usersliked": [],
       "usersdisliked": []
     },
     {
@@ -193,12 +188,10 @@
       "replayTo": "questions",
       "statementId": 2,
       "answer": "Ko neturėti????",
-      "likes": 1,
+      "likes": 0,
       "dislikes": 0,
       "modified": false,
-      "usersliked": [
-        1
-      ],
+      "usersliked": [],
       "usersdisliked": []
     },
     {
@@ -232,12 +225,10 @@
       "statementId": 2,
       "answer": "...ir kitus",
       "likes": 0,
-      "dislikes": 1,
+      "dislikes": 0,
       "modified": false,
       "usersliked": [],
-      "usersdisliked": [
-        1
-      ]
+      "usersdisliked": []
     }
   ],
   "users": [
