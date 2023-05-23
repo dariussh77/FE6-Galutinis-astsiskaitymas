@@ -3,6 +3,7 @@ import { NavLink,useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import UsersContext from '../../contexts/UsersContext';
 const HeaderCSS=styled.header`
+    height: 80px;
     z-index: 7;
     position: sticky;
     top:0;
@@ -13,7 +14,8 @@ const HeaderCSS=styled.header`
     align-items: center;
     padding: 0 20px;
     img{
-        width: 77px;
+        height:70px;
+
         border-radius: 50px;
     }
     ul{
@@ -38,11 +40,7 @@ const HeaderCSS=styled.header`
     }
 `;
 const Header = () => {
-    const navigate=useNavigate();
-    const{loggedIn, setLoggedIn, setShowLogin,setCurrentUser, showLogOut}=useContext(UsersContext);
-    const fClickLogin=()=>{
-        setShowLogin(true);
-    };
+    const{loggedIn}=useContext(UsersContext);
     return ( 
         <HeaderCSS>
             <img src="https://www.vle.lt/tmp/vle-images/88320_1.jpg" alt="Sokratas" />
@@ -53,11 +51,14 @@ const Header = () => {
                     <li><NavLink to='/bendruomene'>Bendruomenė</NavLink></li>
                 </ul>
             </div>
-            <div className="login">
-                <ul>
-                    <li><NavLink to='/register'>Registracija</NavLink></li>
-                </ul>
-            </div>
+            {
+                !loggedIn?<div className="login">
+                    <ul>
+                        <li><NavLink to='/register'>Registracija</NavLink></li>
+                    </ul>
+                </div>:<div></div>
+            }
+
         </HeaderCSS>
      );
 }

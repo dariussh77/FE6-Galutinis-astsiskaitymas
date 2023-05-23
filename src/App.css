@@ -2,7 +2,7 @@
 main{
     padding: 20px;
     margin-left: 250px;
-    margin-bottom: 90px;
+    min-height: calc(100vh - 80px - 40px - 40px);
 }
 body{
     min-width: 700px;

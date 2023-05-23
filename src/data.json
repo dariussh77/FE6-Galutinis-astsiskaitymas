@@ -60,6 +60,20 @@
       "usersdisliked": [
         2
       ]
+    },
+    {
+      "id": 4,
+      "name": "Opa",
+      "straipsnis": "Aforizmas : .",
+      "img_src": "",
+      "creationTime": "1814-03-14",
+      "editTime": "1955-05-17",
+      "likes": 0,
+      "dislikes": 1,
+      "usersliked": [],
+      "usersdisliked": [
+        2
+      ]
     }
   ],
   "questions": [
@@ -271,7 +285,7 @@
     {
       "id": 3,
       "userName": "Daiva",
-      "password": "77!Labas",
+      "password": "$2a$10$VQbvzYL7ogMVxZMCn40vYOj5FG8/4qqumPRS0w1s6HYyXbEcnJ4NS",
       "admin": false,
       "email": "daiva@opa.lt",
       "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
@@ -280,7 +294,7 @@
     {
       "id": "0dfaddb0-f4ae-439c-87bc-8035ef0e66ba",
       "userName": "Ramūnas",
-      "password": "77!Labas",
+      "password": "$2a$10$8XN4LAIbhFH/n9OLMDRWueyM04LstzgxE0HQ2vev0XUXm6yXDBmJC",
       "admin": false,
       "email": "ramunas@gmail.com",
       "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
@@ -303,6 +317,24 @@
       "email": "dariussh77@gmail.com",
       "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
       "locked": true
+    },
+    {
+      "id": "b065868e-692e-421e-b527-c0240a0870a4",
+      "userName": "Robis",
+      "password": "$2a$10$TmVjdMtVQPvV0C.SgsODCuryDZ2t6GBwO6pgdSluersjVsSopfzPm",
+      "admin": false,
+      "email": "sportmenas@gmail.com",
+      "avatar": "https://suvirinimopasaulis.lt/wp-content/uploads/2021/12/Suvirinimo-kauke.jpg",
+      "locked": false
+    },
+    {
+      "id": "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
+      "userName": "Smalius",
+      "password": "$2a$10$yHMQkkWwrEYtp/7xZnRxAeTE5i5OfI3uU4ABAk3gKvEhouMkaHlF2",
+      "admin": true,
+      "email": "smalius77@gmail.com",
+      "avatar": "https://www.efoto.lt/files/images/5167/pup.jpg",
+      "locked": false
     }
   ]
 }
