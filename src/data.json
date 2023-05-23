@@ -29,11 +29,12 @@
       "img_src": "https://media.gettyimages.com/id/136267742/photo/grateful.jpg?s=2048x2048&w=gi&k=20&c=wy0WyQu1vjedG7H0h2gK_fgcMyXhu3i1k8-yZUneU-4=",
       "creationTime": "1977-03-14",
       "editTime": "2023-05-17",
-      "likes": 2,
+      "likes": 3,
       "dislikes": 1,
       "usersliked": [
         2,
-        "a0c8be2a-db9c-4c5c-8311-65eee1aa7108"
+        "a0c8be2a-db9c-4c5c-8311-65eee1aa7108",
+        "3fb23c7e-16ba-47f7-b253-653b86e57d5d"
       ],
       "usersdisliked": [
         3
@@ -46,9 +47,11 @@
       "img_src": "https://www.shutterstock.com/image-vector/stippled-eternity-sign-mobius-strip-260nw-1221740440.jpg",
       "creationTime": "1914-03-14",
       "editTime": "2021-05-17",
-      "likes": 0,
+      "likes": 1,
       "dislikes": 0,
-      "usersliked": [],
+      "usersliked": [
+        "3fb23c7e-16ba-47f7-b253-653b86e57d5d"
+      ],
       "usersdisliked": []
     },
     {
@@ -58,9 +61,11 @@
       "img_src": "http://www.kareivijas.lt/wp-content/uploads/2020/02/haystack-960x640-1.jpg",
       "creationTime": "1814-03-14",
       "editTime": "1955-05-17",
-      "likes": 0,
+      "likes": 1,
       "dislikes": 1,
-      "usersliked": [],
+      "usersliked": [
+        "3fb23c7e-16ba-47f7-b253-653b86e57d5d"
+      ],
       "usersdisliked": [
         2
       ]
@@ -72,9 +77,11 @@
       "img_src": "",
       "creationTime": "1814-03-14",
       "editTime": "1955-05-17",
-      "likes": 0,
+      "likes": 1,
       "dislikes": 1,
-      "usersliked": [],
+      "usersliked": [
+        "3fb23c7e-16ba-47f7-b253-653b86e57d5d"
+      ],
       "usersdisliked": [
         2
       ]
@@ -117,15 +124,16 @@
       "creator": 1,
       "tema": "metafizika",
       "question": "Kodėl verta mąstyti?",
-      "likes": 2,
+      "likes": 3,
       "dislikes": 0,
       "modified": false,
       "usersliked": [
         1,
-        2
+        2,
+        "3fb23c7e-16ba-47f7-b253-653b86e57d5d"
       ],
       "usersdisliked": [],
-      "anwCount": 5
+      "anwCount": 6
     },
     {
       "id": "25b5eac4-6e9c-47fa-b03f-7d47059444a0",
@@ -141,6 +149,20 @@
       ],
       "usersdisliked": [],
       "anwCount": 0
+    },
+    {
+      "id": "84efc1fd-f859-4948-b7e6-b5a8ff7fd1a7",
+      "creator": "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
+      "tema": "",
+      "question": "Koks mano tikslas? Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?",
+      "likes": 1,
+      "dislikes": 0,
+      "modified": false,
+      "usersliked": [
+        "3fb23c7e-16ba-47f7-b253-653b86e57d5d"
+      ],
+      "usersdisliked": [],
+      "anwCount": 1
     }
   ],
   "answers": [
@@ -150,10 +172,12 @@
       "replayTo": "questions",
       "statementId": 3,
       "answer": "Mąstau vadinasi egzistuoju...",
-      "likes": 0,
+      "likes": 1,
       "dislikes": 0,
       "modified": false,
-      "usersliked": [],
+      "usersliked": [
+        "3fb23c7e-16ba-47f7-b253-653b86e57d5d"
+      ],
       "usersdisliked": []
     },
     {
@@ -180,10 +204,12 @@
       "replayTo": "answers",
       "statementId": 3,
       "answer": "Ar tikrai mąstai.....?",
-      "likes": 0,
+      "likes": 1,
       "dislikes": 1,
       "modified": false,
-      "usersliked": [],
+      "usersliked": [
+        "3fb23c7e-16ba-47f7-b253-653b86e57d5d"
+      ],
       "usersdisliked": [
         2
       ]
@@ -308,6 +334,46 @@
         "a0c8be2a-db9c-4c5c-8311-65eee1aa7108"
       ],
       "usersdisliked": []
+    },
+    {
+      "id": "fc0c50fb-ad85-4373-982c-a78d906eb2bf",
+      "creator": "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
+      "replayTo": "questions",
+      "statementId": 3,
+      "answer": "Manau verta mąstyti apie dešrą.....",
+      "likes": 0,
+      "dislikes": 0,
+      "modified": false,
+      "usersliked": [],
+      "usersdisliked": []
+    },
+    {
+      "id": "e7a7c7bc-6f9a-41da-af51-37a6381d534c",
+      "creator": "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
+      "replayTo": "questions",
+      "statementId": "84efc1fd-f859-4948-b7e6-b5a8ff7fd1a7",
+      "answer": "O va taip",
+      "likes": 0,
+      "dislikes": 1,
+      "modified": false,
+      "usersliked": [],
+      "usersdisliked": [
+        "3fb23c7e-16ba-47f7-b253-653b86e57d5d"
+      ]
+    },
+    {
+      "id": "c27c714f-994c-4b31-8edc-08c937038475",
+      "creator": "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
+      "replayTo": "questions",
+      "statementId": "84efc1fd-f859-4948-b7e6-b5a8ff7fd1a7",
+      "answer": "Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?Koks mano tikslas?",
+      "likes": 0,
+      "dislikes": 1,
+      "modified": false,
+      "usersliked": [],
+      "usersdisliked": [
+        "3fb23c7e-16ba-47f7-b253-653b86e57d5d"
+      ]
     }
   ],
   "users": [
@@ -326,7 +392,7 @@
       "password": "$2a$10$yxvMoBxAuBiDDGVmuLxA1.OPjya6Agf9t0pcnhEpWv2jovQmV4NE.",
       "admin": true,
       "email": "darius@admin.lt",
-      "avatar": "https://picsum.photos/id/823/100/100",
+      "avatar": "https://scontent.fplq1-2.fna.fbcdn.net/v/t1.15752-9/187569933_3721255707997498_5662493259587039534_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=g0uZ4llc6W0AX-qCJ82&_nc_ht=scontent.fplq1-2.fna&oh=03_AdSh1nmY6uyHAB-Ki2oADhwVH65Za1cls-9Nvz3m_4awHg&oe=6494C84C",
       "locked": false
     },
     {
@@ -344,7 +410,7 @@
       "password": "$2a$10$VQbvzYL7ogMVxZMCn40vYOj5FG8/4qqumPRS0w1s6HYyXbEcnJ4NS",
       "admin": false,
       "email": "daiva@opa.lt",
-      "avatar": "https://png.pngtree.com/png-vector/20190805/ourlarge/pngtree-account-avatar-user-abstract-circle-background-flat-color-icon-png-image_1650938.jpg",
+      "avatar": "https://www.ntekspertai.lt/wp-content/uploads/elementor/thumbs/Daiva-NT_Ekspertai-p82pktf9n5ld4sr82bdngwaru8c03vlqirxfmytkeg.png",
       "locked": false
     },
     {
