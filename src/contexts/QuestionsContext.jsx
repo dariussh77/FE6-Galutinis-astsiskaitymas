@@ -4,12 +4,11 @@ const QuestionsContext=createContext();
 const QuestionsAction={
     get:"get_questions",
     edit:"edit_questions",
-    likeAdd:"add_like"
 };
 const reducer=(state,action)=>{
     switch(action.type){
         case QuestionsAction.get:return action.data;
-        case QuestionsAction.likeAdd:
+        case QuestionsAction.edit:
             fetch(`http://localhost:7777/questions/${action.data.id}`,{
                 method:"PUT",
                 headers:{"Content-Type":"application/json"},

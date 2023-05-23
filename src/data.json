@@ -15,6 +15,10 @@
     {
       "id": 4,
       "tema": "filosofija bendrai"
+    },
+    {
+      "id": 5,
+      "tema": "VISOS TEMOS"
     }
   ],
   "straipsniai": [
@@ -90,7 +94,8 @@
         1,
         "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
         2
-      ]
+      ],
+      "anwCount": 2
     },
     {
       "id": 2,
@@ -105,7 +110,8 @@
       ],
       "usersdisliked": [
         2
-      ]
+      ],
+      "anwCount": 6
     },
     {
       "id": 3,
@@ -119,7 +125,8 @@
         1,
         2
       ],
-      "usersdisliked": []
+      "usersdisliked": [],
+      "anwCount": 5
     }
   ],
   "answers": [
@@ -173,13 +180,14 @@
       "replayTo": "answers",
       "statementId": 1,
       "answer": "O gal viskas numatyta.... Tai tik spektaklis",
-      "likes": 0,
-      "dislikes": 1,
+      "likes": 2,
+      "dislikes": 0,
       "modified": false,
-      "usersliked": [],
-      "usersdisliked": [
+      "usersliked": [
+        "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
         2
-      ]
+      ],
+      "usersdisliked": []
     },
     {
       "id": "fbca6094-bb4c-4573-934b-50d1b1ccbf55",
@@ -270,6 +278,26 @@
       "usersdisliked": [
         1
       ]
+    },
+    {
+      "id": "d6c421a3-fbc9-41bf-8910-aa685d506a5b",
+      "creator": "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
+      "replayTo": "questions",
+      "statementId": 1,
+      "answer": "AU Au",
+      "likes": 0,
+      "dislikes": 0,
+      "modified": false
+    },
+    {
+      "id": "19fd68fa-eb30-4b7f-ba0c-543a27563222",
+      "creator": "3fb23c7e-16ba-47f7-b253-653b86e57d5d",
+      "replayTo": "questions",
+      "statementId": 3,
+      "answer": "AU Au AU",
+      "likes": 0,
+      "dislikes": 0,
+      "modified": false
     }
   ],
   "users": [

@@ -33,15 +33,16 @@ const MainCommentsCSS=styled.main`
 `;
 const ForumComments = () => {
     const navigate=useNavigate();
-    const {state}=useLocation();
-    useEffect(()=>{
-        setCurrentQ(state);
-    },[])
+    /* const {state}=useLocation(); */
+    const{id}=useParams();
     
 const{answers,setAnswers,AnswerAction}=useContext(AnswersContext);
     const{setQuestions,QuestionsAction,currentQ,setCurrentQ}=useContext(QuestionsContext);
-    
-    console.log('question: ', state);
+    useEffect(()=>{
+        fetch(`http://localhost:7777/questions/${id}`)
+            .then(res=>res.json())
+            .then(data=>setCurrentQ(data));
+    },[]);
     const{users,currentUser,loggedIn}=useContext(UsersContext);
     const initialValues={
         id:0,
@@ -69,12 +70,19 @@ const{answers,setAnswers,AnswerAction}=useContext(AnswersContext);
                     modified: false
             }});
             actions.resetForm(initialValues);
+            setQuestions({
+                type:QuestionsAction.edit,
+                data:{
+                    ...currentQ,
+                    anwCount:(currentQ.anwCount+1)
+                }
+            })
         }
     });
     const fAddLike=()=>{
         loggedIn&&!currentQ.usersliked.includes(currentUser.id)&&!currentQ.usersdisliked.includes(currentUser.id)
             ?setQuestions({
-                type:QuestionsAction.likeAdd,
+                type:QuestionsAction.edit,
                 data:{
                     ...currentQ,
                     likes:(currentQ.likes+1),
@@ -84,20 +92,25 @@ const{answers,setAnswers,AnswerAction}=useContext(AnswersContext);
             }})
             :loggedIn&&!currentQ.usersliked.includes(currentUser.id)&&currentQ.usersdisliked.includes(currentUser.id)
             ?setQuestions({
-                type:QuestionsAction.likeAdd,
+                type:QuestionsAction.edit,
                 data:{...currentQ,
                 likes:(currentQ.likes+1), 
-                dislikes:(state.dislikes-1), 
+                dislikes:(currentQ.dislikes-1), 
                 usersliked:[...currentQ.usersliked,currentUser.id],
                 usersdisliked:currentQ.usersdisliked.filter(e=>e!==currentUser.id)
             }})
             :loggedIn&&currentQ.usersliked.includes(currentUser.id)?alert('Jau balsavote'):alert('Esate neprisijungęs');
-            navigate(`/forumas/${currentQ.id}`);
+            /* navigate(`/forumas/${currentQ.id}`); */
+            setTimeout(()=>{
+                fetch(`http://localhost:7777/questions/${id}`)
+                    .then(res=>res.json())
+                    .then(data=>setCurrentQ(data));
+            },300)
     };
     const fAddDislike=()=>{
             loggedIn&&!currentQ.usersdisliked.includes(currentUser.id)&&!currentQ.usersliked.includes(currentUser.id)
                 ?setQuestions({
-                    type:QuestionsAction.likeAdd,
+                    type:QuestionsAction.edit,
                     data:{...currentQ,
                     dislikes:(currentQ.dislikes+1), 
                     likes:(currentQ.likes), 
@@ -106,7 +119,7 @@ const{answers,setAnswers,AnswerAction}=useContext(AnswersContext);
                 }})
                 :loggedIn&&!currentQ.usersdisliked.includes(currentUser.id)&&currentQ.usersliked.includes(currentUser.id)
                 ?setQuestions({
-                    type:QuestionsAction.likeAdd,
+                    type:QuestionsAction.edit,
                     data:{...currentQ,
                     dislikes:(currentQ.dislikes+1), 
                     likes:(currentQ.likes-1), 
@@ -114,7 +127,12 @@ const{answers,setAnswers,AnswerAction}=useContext(AnswersContext);
                     usersliked:currentQ.usersliked.filter(e=>e!==currentUser.id)
                 }})
                 :loggedIn&&currentQ.usersdisliked.includes(currentUser.id)?alert('Jau balsavote'):alert('Esate neprisijungęs');
-                navigate(`/forumas/${currentQ.id}`);
+                /* navigate(`/forumas/${currentQ.id}`); */
+                setTimeout(()=>{
+                    fetch(`http://localhost:7777/questions/${id}`)
+                        .then(res=>res.json())
+                        .then(data=>setCurrentQ(data));
+                },300)
     };
     return ( 
         <MainCommentsCSS>
